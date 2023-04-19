@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Permissions System </title>
+    <title>&#26435;&#38480;&#31995;&#32479; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Permissions System ">
+    <meta name="title" content="&#26435;&#38480;&#31995;&#32479; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#permissions-system">Permissions System</a><ul class="level2 nav bs-docs-sidenav permissions-system"><li><a href="#permission-types">Permission Types</a></li><li><a href="#required-vs-option-permissions">Required vs Option Permissions</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#权限系统">权限系统</a><ul class="level2 nav bs-docs-sidenav 权限系统"><li><a href="#权限类型">权限类型</a></li><li><a href="#必需与可选权限">必需与可选权限</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,34 +132,34 @@
                                     </ul>
                                 </span>
 
-<h1 id="permissions-system">Permissions System</h1>
+<h1 id="权限系统">权限系统</h1>
 
-<p>Permissions are set on a resource-by-resource basis and have to be accepted by the user joining the server</p>
-<h2 id="permission-types">Permission Types</h2>
+<p>权限是以每个资源为基础设置的,并且必须被加入服务器的用户接受。</p>
+<h2 id="权限类型">权限类型</h2>
 <table>
 <thead>
 <tr>
-<th>Permission</th>
-<th style="text-align: center;">Description</th>
+<th>权限</th>
+<th style="text-align: center;">描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Screen Capture</td>
-<td style="text-align: center;">This allows a screenshot to be taken of the alt:V process (just GTA) and any webview</td>
+<td>屏幕截图</td>
+<td style="text-align: center;">这允许对alt:V 进程(仅限GTA)和任何Web视图进行屏幕截图</td>
 </tr>
 <tr>
 <td>WebRTC</td>
-<td style="text-align: center;">This allows peer-to-peer RTC inside JS</td>
+<td style="text-align: center;">这允许JS内部进行点对点RTC</td>
 </tr>
 <tr>
-<td>Clipboard Access</td>
-<td style="text-align: center;">This allows to copy content to users clipboard</td>
+<td>剪贴板访问</td>
+<td style="text-align: center;">这允许复制内容到用户的剪贴板</td>
 </tr>
 </tbody>
 </table>
-<h2 id="required-vs-option-permissions">Required vs Option Permissions</h2>
-<p>Permissions can be either be optional or required. When they are optional, this will still allow the player to join the server if they don't agree to it however you will no longer have access to the features for which the permission covers. Required permissions behave differently in the fact that if the user does not accept them then they will be unable to access the server.</p>
+<h2 id="必需与可选权限">必需与可选权限</h2>
+<p>权限可以是可选的或必需的。当它们是可选的时,即使用户不同意它们也仍允许玩家加入服务器,但是您将无法访问权限所涵盖的功能。必需的权限的行为不同,如果用户不接受它们,则无法访问服务器。</p>
 <pre><code>required-permissions = [
     &quot;Screen Capture&quot;,
     &quot;WebRTC&quot;,
@@ -172,10 +172,10 @@ optional-permissions = [
     &quot;Clipboard Access&quot;
 ]
 </code></pre>
-<div class="TIP">
-<h5>Tip</h5>
-<p>To check if a user has approved the respective permission the method <a href="https://docs.altv.mp/js/api/alt-client.html#_altmp_altv_types_alt_client_getPermissionState">alt.getPermissionState</a> can be used.</p>
-</div>
+<blockquote>
+<p>[!提示]
+要检查用户是否批准了相应的权限,可以使用方法 <a href="https://docs.altv.mp/js/api/alt-client.html#_altmp_altv_types_alt_client_getPermissionState">alt.getPermissionState</a>。</p>
+</blockquote>
 </article>
                     </div>
 
