@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Client Console </title>
+    <title>&#23458;&#25143;&#31471;&#25511;&#21046;&#21488; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Client Console ">
+    <meta name="title" content="&#23458;&#25143;&#31471;&#25511;&#21046;&#21488; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#client-console">Client Console</a></li><li><a href="#default-commands">Default Commands</a></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#客户端控制台">客户端控制台</a></li><li><a href="#默认命令">默认命令</a></li></ul></div>
                             </div>
 
                             
@@ -127,94 +127,94 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/console.md/#L1">Improve this Doc</a>
+                                                <a href="https://github.com/Ptr147/altv-docs-cn/blob/master/articles/console.md/#L1">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
-<h1 id="client-console">Client Console</h1>
+<h1 id="客户端控制台">客户端控制台</h1>
 
-<p>alt:V has a Client Console integrated which can be opened with the key &quot;F8&quot;. It shows the output of clientside <a href="https://docs.altv.mp/js/api/alt-client.html#_altmp_altv_types_alt_client_log">alt.log()</a>, some additional informations and has an inputfield for commands, which can be accessed from a clientside script with the <a href="https://docs.altv.mp/js/api/alt-client.IClientEvent.html#_altmp_altv_types_alt_client_IClientEvent_consoleCommand">consoleCommand Event</a>. But there are also some default Commands which are listed below, some of them need the debug mode of the client enabled.<br>
-If the console is opened the Game Controls are disabled, which can be checked with <a href="https://docs.altv.mp/js/api/alt-client.html#_altmp_altv_types_alt_client_gameControlsEnabled">alt.gameControlsEnabled()</a>.</p>
-<h1 id="default-commands">Default Commands</h1>
+<p>alt:V集成了客户端控制台,可以通过键&quot;F8&quot;打开。它显示了客户端的<a href="https://docs.altv.mp/js/api/alt-client.html#_altmp_altv_types_alt_client_log">alt.log()</a>输出、一些额外信息,并有一个用于输入命令的输入字段,客户端脚本可以通过<a href="https://docs.altv.mp/js/api/alt-client.IClientEvent.html#altmp_altv_types_alt_client_IClientEvent_consoleCommand">控制台命令事件</a>访问。但是,还有一些默认命令,列在下面,其中一些需要启用客户端的调试模式。<br>
+如果打开了控制台,游戏控制将被禁用,这可以通过<a href="https://docs.altv.mp/js/api/alt-client.html#_altmp_altv_types_alt_client_gameControlsEnabled">alt.gameControlsEnabled()</a>检查。</p>
+<h1 id="默认命令">默认命令</h1>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Command</th>
-<th style="text-align: center;">Debug needed</th>
-<th style="text-align: center;">Description</th>
+<th style="text-align: center;">命令</th>
+<th style="text-align: center;">需要调试</th>
+<th style="text-align: center;">说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: center;">netgraph [0/1]</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Shows a netgraph on the minimap for fps and network informations.</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">在小地图上显示fps和网络信息网格图。</td>
 </tr>
 <tr>
 <td style="text-align: center;">quit</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Closes the game.</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">关闭游戏。</td>
 </tr>
 <tr>
 <td style="text-align: center;">heap</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Shows &quot;Heap benchmark infos&quot; in console.</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">在控制台中显示&quot;堆基准信息&quot;。</td>
 </tr>
 <tr>
 <td style="text-align: center;">heapspaces</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Shows &quot;Heap spaces infos&quot; in console.</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">在控制台中显示&quot;堆空间信息&quot;。</td>
 </tr>
 <tr>
 <td style="text-align: center;">timers</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Shows &quot;Timers benchmark infos&quot; in console.</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">在控制台中显示&quot;计时器基准信息&quot;。</td>
 </tr>
 <tr>
 <td style="text-align: center;">reconnect [password]</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Reconnects to the same server, password is the server password and optional.</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">重新连接到同一服务器,密码是服务器密码,可选。</td>
 </tr>
 <tr>
 <td style="text-align: center;">external_console [0/1]</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Open console in a extra window.</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">在额外窗口中打开控制台。</td>
 </tr>
 <tr>
 <td style="text-align: center;">voiceVolume [0-200]</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Sets the output volume.</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">设置输出音量。</td>
 </tr>
 <tr>
 <td style="text-align: center;">voiceInputVolume [0-200]</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Sets the input volume.</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">设置输入音量。</td>
 </tr>
 <tr>
 <td style="text-align: center;">js-module</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Shows informations about the js module.</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">显示有关js模块的信息。</td>
 </tr>
 <tr>
 <td style="text-align: center;">debugvehs</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Shows &quot;Streamed in server vehicles info&quot; in console.</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">在控制台中显示&quot;流入服务器的车辆信息&quot;。</td>
 </tr>
 <tr>
 <td style="text-align: center;">rmldebug</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Shows RMLUI debug window</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">显示RMLUI调试窗口</td>
 </tr>
 <tr>
 <td style="text-align: center;">connect [ip:port or url] [password?]</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Connects to a server.</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">连接到服务器。</td>
 </tr>
 <tr>
 <td style="text-align: center;">clear</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">Clears the console.</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">清除控制台。</td>
 </tr>
 </tbody>
 </table>

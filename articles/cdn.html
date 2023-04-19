@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Setup CDN </title>
+    <title>&#35774;&#32622;CDN </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Setup CDN ">
+    <meta name="title" content="&#35774;&#32622;CDN ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#setup-cdn">Setup CDN</a></li><li><a href="#step-by-step-tutorial">Step-by-Step Tutorial</a><ul class="level2 nav bs-docs-sidenav step-by-step-tutorial"><li><a href="#example-values">Example values</a></li><li><a href="#step-by-step-example">Step-by-Step Example</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#设置cdn">设置CDN</a></li><li><a href="#步骤教程">步骤教程</a><ul class="level2 nav bs-docs-sidenav 步骤教程"><li><a href="#示例">示例</a></li><li><a href="#步骤示例">步骤示例</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -127,51 +127,51 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/cdn.md/#L1">Improve this Doc</a>
+                                                <a href="https://github.com/Ptr147/altv-docs-cn/blob/master/articles/cdn.md/#L1">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
-<h1 id="setup-cdn">Setup CDN</h1>
+<h1 id="设置cdn">设置CDN</h1>
 
-<p>CDN (Content delivery Network) is a function to speedup the download of the resources for connecting users and to relive the server. The CDN can be provided with any filehosting server that supports HTTP/HTTPS.</p>
-<p>It's working as followed: The client connects to the CDN Server, which provides the resource files for the client. After the download is complete, the client connects to the alt:V Server.</p>
-<h1 id="step-by-step-tutorial">Step-by-Step Tutorial</h1>
-<h2 id="example-values">Example values</h2>
-<p>In this tutorial following example values are used:</p>
+<p>CDN(内容分发网络)是一个加快连接用户资源下载和减轻服务器负载的功能。CDN可以通过任何支持HTTP/HTTPS的文件托管服务器提供。</p>
+<p>它的工作流程如下:客户端连接到CDN服务器,CDN服务器为客户端提供资源文件。下载完成后,客户端连接到alt:V服务器。</p>
+<h1 id="步骤教程">步骤教程</h1>
+<h2 id="示例">示例</h2>
+<p>在本教程中使用以下示例:</p>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th style="text-align: center;">Value</th>
-<th style="text-align: center;">Description</th>
+<th style="text-align: center;">键</th>
+<th style="text-align: center;">值</th>
+<th style="text-align: center;">描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>cdnUrl</td>
+<td style="text-align: center;">cdnUrl</td>
 <td style="text-align: center;"><a href="http://connect.example.com/">http://connect.example.com/</a></td>
-<td style="text-align: center;">The url to the cdn server.</td>
+<td style="text-align: center;">CDN服务器的URL。</td>
 </tr>
 <tr>
-<td>Server IP</td>
+<td style="text-align: center;">服务器IP</td>
 <td style="text-align: center;">127.0.0.1</td>
-<td style="text-align: center;">The IP address of the alt:V server.</td>
+<td style="text-align: center;">alt:V服务器的IP地址。</td>
 </tr>
 <tr>
-<td>Server Port</td>
+<td style="text-align: center;">服务器端口</td>
 <td style="text-align: center;">7788</td>
-<td style="text-align: center;">The Port of the alt:V server.</td>
+<td style="text-align: center;">alt:V服务器的端口。</td>
 </tr>
 </tbody>
 </table>
-<h2 id="step-by-step-example">Step-by-Step Example</h2>
+<h2 id="步骤示例">步骤示例</h2>
 <ol>
-<li>Add <code>useCdn = true</code> to <code>server.toml</code>.</li>
-<li>Add <code>cdnUrl = &quot;http://connect.example.com&quot;</code> to <code>server.toml</code>.</li>
-<li>Start you server with params <code>--host 127.0.0.1 --port 7788 --justpack</code></li>
-<li>Add all generated files from the folder <code>cdn_upload</code> to your CDN Server, the files should be placed in the root of the domain. (You should be abble to access <code>connect.json</code> under <code>http://connect.example.com/connect.json</code>).</li>
-<li>For direct connect use your cdnUrl <code>connect.example.com</code></li>
+<li>在<code>server.toml</code>中添加<code>useCdn = true</code>。</li>
+<li>在<code>server.toml</code>中添加<code>cdnUrl = &quot;http://connect.example.com&quot;</code>。</li>
+<li>使用参数<code>--host 127.0.0.1 --port 7788 --justpack</code>启动您的服务器。</li>
+<li>将<code>cdn_upload</code>文件夹中的所有生成文件添加到您的CDN服务器,文件应放在域的根目录下。(您应该能够在<code>http://connect.example.com/connect.json</code>下访问<code>connect.json</code>)。</li>
+<li>用于直接连接,使用您的cdnUrl <code>connect.example.com</code>。</li>
 </ol>
 </article>
                     </div>

@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Command-line Arguments </title>
+    <title>&#21629;&#20196;&#34892;&#21442;&#25968; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Command-line Arguments ">
+    <meta name="title" content="&#21629;&#20196;&#34892;&#21442;&#25968; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#command-line-arguments">Command-line Arguments</a><ul class="level2 nav bs-docs-sidenav command-line-arguments"><li><a href="#server-launch-options">Server launch options</a></li><li><a href="#client-launch-options">Client launch options</a></li><li><a href="#server-commands">Server Commands</a></li><li><a href="#client-commands">Client Commands</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#命令行参数">命令行参数</a><ul class="level2 nav bs-docs-sidenav 命令行参数"><li><a href="#服务器启动选项">服务器启动选项</a></li><li><a href="#客户端启动选项">客户端启动选项</a></li><li><a href="#服务器命令">服务器命令</a></li><li><a href="#客户端命令">客户端命令</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -127,143 +127,143 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/commandlineargs.md/#L1">Improve this Doc</a>
+                                                <a href="https://github.com/Ptr147/altv-docs-cn/blob/master/articles/commandlineargs.md/#L1">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
-<h1 id="command-line-arguments">Command-line Arguments</h1>
+<h1 id="命令行参数">命令行参数</h1>
 
-<p>Command line arguments means you'll likely need to pass them to individual '.exe' or compiled server or client versions.</p>
-<p><code>&lt;exe or file&gt; --option1 --option2 --option3</code></p>
-<h2 id="server-launch-options">Server launch options</h2>
+<p>命令行参数意味着您可能需要将它们传递给单独的'.exe'或编译的服务器或客户端版本。</p>
+<p><code>&lt;exe 或文件&gt; --option1 --option2 --option3</code></p>
+<h2 id="服务器启动选项">服务器启动选项</h2>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th style="text-align: center;">Description</th>
-<th style="text-align: center;">Notes</th>
+<th>键</th>
+<th style="text-align: center;">描述</th>
+<th style="text-align: center;">注释</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>--config [path]</td>
-<td style="text-align: center;">Path to server config file ([path] needs to be replaced with config path)</td>
+<td>--config [路径]</td>
+<td style="text-align: center;">服务器配置文件路径([路径]需要替换为配置路径)</td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
-<td>--logfile [path]</td>
-<td style="text-align: center;">Path to log file, will only output one log file to specific path instead of putting them into the log folder ([path] needs to be replaced with log path)</td>
-<td style="text-align: center;">Has higher priority then --logfolder</td>
+<td>--logfile [路径]</td>
+<td style="text-align: center;">日志文件路径,将只输出一个日志文件到指定路径,而不是将它们放入日志文件夹([路径]需要替换为日志路径)</td>
+<td style="text-align: center;">优先级高于--logfolder</td>
 </tr>
 <tr>
-<td>--logfolder [path]</td>
-<td style="text-align: center;">Path to log folder ([path] needs to be replaced with log folder path)</td>
-<td style="text-align: center;">Has lower priority then --logfile</td>
+<td>--logfolder [路径]</td>
+<td style="text-align: center;">日志文件夹路径([路径]需要替换为日志文件夹路径)</td>
+<td style="text-align: center;">优先级低于--logfile</td>
 </tr>
 <tr>
 <td>--no-logfile</td>
-<td style="text-align: center;">Disables the logging to log files</td>
+<td style="text-align: center;">禁用日志记录到日志文件</td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
-<td>--extra-res-folder [path]</td>
-<td style="text-align: center;">Path to additional resource folder ([path] needs to be replaced with the the additional resource folder path)</td>
+<td>--extra-res-folder [路径]</td>
+<td style="text-align: center;">额外资源文件夹路径([路径]需要替换为额外资源文件夹路径)</td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
 <td>--justpack</td>
-<td style="text-align: center;">Creates packages and a resources.json for cdn download in the root folder</td>
+<td style="text-align: center;">在根文件夹中创建包和resources.json供cdn下载</td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
-<td>--host [host]</td>
-<td style="text-align: center;">Specifies the host which the server should bind to ([host] needs to be replaced with the host)</td>
+<td>--host [主机]</td>
+<td style="text-align: center;">指定服务器应绑定的主机([主机]需要替换为主机)</td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
-<td>--port [port]</td>
-<td style="text-align: center;">Specifies the port which the should bind to ([port] needs to be replaced with port)</td>
+<td>--port [端口]</td>
+<td style="text-align: center;">指定服务器应绑定的端口([端口]需要替换为端口)</td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
 <td>--convert-config-format</td>
-<td style="text-align: center;">Converts all &quot;.cfg&quot; config files to &quot;.toml&quot; format</td>
+<td style="text-align: center;">将所有&quot;.cfg&quot;配置文件转换为&quot;.toml&quot;格式</td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
 <td>--help</td>
-<td style="text-align: center;">Displays help text for all cli arguments</td>
+<td style="text-align: center;">显示所有cli参数的帮助文本</td>
 <td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
-<h2 id="client-launch-options">Client launch options</h2>
+<h2 id="客户端启动选项">客户端启动选项</h2>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th style="text-align: center;">Description</th>
+<th>键</th>
+<th style="text-align: center;">描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>-noupdate</td>
-<td style="text-align: center;">Skips alt:V updates (only works on the dev <a href="https://docs.altv.mp/articles/branches.html#dev-development">branch</a>)</td>
+<td style="text-align: center;">跳过alt:V更新(仅在dev [https://docs.altv.mp/articles/branches.html#dev-development)分支上有效)</td>
 </tr>
 <tr>
 <td>-connecturl [url]</td>
-<td style="text-align: center;">Directly connects to specfied url ([url] needs to be replaced with the connectionurl)</td>
+<td style="text-align: center;">直接连接到指定的url([url]需要替换为连接url)</td>
 </tr>
 <tr>
 <td>-debug</td>
-<td style="text-align: center;">Enables debug mode</td>
+<td style="text-align: center;">启用调试模式</td>
 </tr>
 <tr>
-<td>-branch [branch]</td>
-<td style="text-align: center;">Sets the branch to use ([branch] needs to be replaced with release, rc or dev)</td>
+<td>-branch [分支]</td>
+<td style="text-align: center;">设置要使用的分支([分支]需要替换为release、rc或dev)</td>
 </tr>
 <tr>
 <td>-skipprocessconfirmation</td>
-<td style="text-align: center;">Skips the confirmation message for closing an already running GTA V / alt:V instance</td>
+<td style="text-align: center;">跳过关闭已运行的GTA V/alt:V实例的确认消息</td>
 </tr>
 </tbody>
 </table>
-<h2 id="server-commands">Server Commands</h2>
+<h2 id="服务器命令">服务器命令</h2>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th style="text-align: center;">Description</th>
+<th>键</th>
+<th style="text-align: center;">描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>start [resourcename]</td>
-<td style="text-align: center;">Starts a server resource by name</td>
+<td style="text-align: center;">按名称启动服务器资源</td>
 </tr>
 <tr>
 <td>stop [resourcename]</td>
-<td style="text-align: center;">Stops a server resource by name</td>
+<td style="text-align: center;">按名称停止服务器资源</td>
 </tr>
 <tr>
 <td>restart [resourcename]</td>
-<td style="text-align: center;">Restarts a server resource by name</td>
+<td style="text-align: center;">按名称重启服务器资源</td>
 </tr>
 </tbody>
 </table>
-<h2 id="client-commands">Client Commands</h2>
+<h2 id="客户端命令">客户端命令</h2>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th style="text-align: center;">Description</th>
+<th>键</th>
+<th style="text-align: center;">描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>clear</td>
-<td style="text-align: center;">Clear console buffer</td>
+<td style="text-align: center;">清除控制台缓冲区</td>
 </tr>
 </tbody>
 </table>

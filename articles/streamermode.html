@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Streamer Mode </title>
+    <title>&#27969;&#23186;&#20307;&#27169;&#24335; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Streamer Mode ">
+    <meta name="title" content="&#27969;&#23186;&#20307;&#27169;&#24335; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#streamer-mode">Streamer Mode</a><ul class="level2 nav bs-docs-sidenav streamer-mode"><li><a href="#how-to-activate-streamer-mode">How to activate streamer mode?</a></li><li><a href="#how-to-script-with-streamer-mode">How to script with streamer mode?</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#流媒体模式">流媒体模式</a><ul class="level2 nav bs-docs-sidenav 流媒体模式"><li><a href="#如何激活流媒体模式">如何激活流媒体模式?</a></li><li><a href="#如何在流媒体模式下脚本">如何在流媒体模式下脚本?</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -127,20 +127,20 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/streamermode.md/#L1">Improve this Doc</a>
+                                                <a href="https://github.com/Ptr147/altv-docs-cn/blob/master/articles/streamermode.md/#L1">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
-<h1 id="streamer-mode">Streamer Mode</h1>
+<h1 id="流媒体模式">流媒体模式</h1>
 
-<p>The idea behind Streamer Mode is to hide selected webviews (often used for HUD and Interfaces) to recording and streaming software like OBS. The software needs to record GTA V in &quot;Game Capture&quot;-Mode, this mode doesn't record overlays.</p>
-<h2 id="how-to-activate-streamer-mode">How to activate streamer mode?</h2>
-<p>Open your alt:V folder and open the altv.toml file with Notepad++ or Notepad and add <code>streamerMode = true</code> to the end of the file. If a line with <code>streamerMode</code> already exist, modify the parameter <code>false</code> to <code>true</code>. Restart your game and now Streamer Mode is enabled.</p>
-<h2 id="how-to-script-with-streamer-mode">How to script with streamer mode?</h2>
-<p>To create a webview which isn't rendered in streamer mode, you need to set the overlay parameter from webview constructor to <code>true</code>. The default value of the overlay parameter is <code>false</code> if the argument isn't specified.</p>
-<p>Here you can see an example on how to hide a webview from streaming software in streamer mode:</p>
-<pre><code class="lang-js">let webview = new alt.WebView(&quot;https://altv.mp&quot;, true);
+<p>流媒体模式的理念是隐藏选定的网页视图(通常用于HUD和界面),使其不被OBS等录制和流媒体软件记录。该软件需要在&quot;游戏捕获&quot;模式下记录GTA V,此模式不会记录覆盖物。</p>
+<h2 id="如何激活流媒体模式">如何激活流媒体模式?</h2>
+<p>打开alt:V文件夹,使用Notepad++或记事本打开altv.toml文件,在文件末尾添加<code>streamerMode = true</code>。如果已存在带有<code>streamerMode</code>的行,请将参数<code>false</code>修改为<code>true</code>。重启游戏,现在流媒体模式已启用。</p>
+<h2 id="如何在流媒体模式下脚本">如何在流媒体模式下脚本?</h2>
+<p>要创建在流媒体模式下不呈现的网页视图,需要将网页视图构造函数的参数overlay设置为<code>true</code>。如果未指定参数,overlay参数的默认值为<code>false</code>。</p>
+<p>这里您可以看到一个示例,说明如何在流媒体模式下隐藏网页视图以避免流媒体软件录制:</p>
+<pre><code class="lang-js">let webview = new alt.WebView(&quot;https://altv.mp&quot;, true); 
 </code></pre>
 </article>
                     </div>

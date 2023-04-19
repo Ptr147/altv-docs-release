@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Introduction to RmlUi </title>
+    <title>RmlUi &#31616;&#20171; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Introduction to RmlUi ">
+    <meta name="title" content="RmlUi &#31616;&#20171; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#introduction-to-rmlui">Introduction to RmlUi</a><ul class="level2 nav bs-docs-sidenav introduction-to-rmlui"><li><a href="#what-is-rmlui">What is RmlUi</a></li><li><a href="#comparison-to-cef-webview">Comparison to CEF WebView</a></li><li><a href="#when-to-use-rmlui">When to use RmlUi</a></li><li><a href="#documentation">Documentation</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#rmlui-简介">RmlUi 简介</a><ul class="level2 nav bs-docs-sidenav rmlui-简介"><li><a href="#rmlui-是什么">RmlUi 是什么</a></li><li><a href="#与-cef-webview-的比较">与 CEF WebView 的比较</a></li><li><a href="#何时使用-rmlui">何时使用 RmlUi</a></li><li><a href="#文档">文档</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -127,38 +127,38 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/rmlui/introduction.md/#L1">Improve this Doc</a>
+                                                <a href="https://github.com/Ptr147/altv-docs-cn/blob/master/articles/rmlui/introduction.md/#L1">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
-<h1 id="introduction-to-rmlui">Introduction to RmlUi</h1>
+<h1 id="rmlui-简介">RmlUi 简介</h1>
 
-<p>This article describes what RmlUi is and the benefits of using it.</p>
-<h2 id="what-is-rmlui">What is RmlUi</h2>
-<p>RmlUi is a <a href="https://github.com/mikke89/RmlUi">open-source</a>, light-weight C++ library that supports XHTML1 and CSS2.<br>
-Due to the direct implementation in the alt:V client as well as the lower function set, RmlUi has a much higher performance, which allows updates that take place every frame.<br>
-Because of the fact that only CSS2 is supported, not all css functions are available.<br>
-This may mean that existing CSS code for a CEF WebView might not work with RmlUi and may require customization.<br>
-More information about this can be found in the <a href="https://mikke89.github.io/RmlUiDoc/pages/rcss.html">RmlUi documentation</a>.</p>
-<h2 id="comparison-to-cef-webview">Comparison to CEF WebView</h2>
-<p><strong>Advantages</strong></p>
+<p>本文介绍了 RmlUi 是什么及使用它的好处。</p>
+<h2 id="rmlui-是什么">RmlUi 是什么</h2>
+<p>RmlUi 是一个<a href="https://github.com/mikke89/RmlUi">开源</a>,轻量级的 C++ 库,支持 XHTML1 和 CSS2。<br>
+由于直接在 alt:V 客户端实现以及较低的功能集,RmlUi 的性能要高得多,可以每帧更新。<br>
+由于只支持 CSS2,因此不是所有 css 函数都可用。<br>
+这可能意味着为 CEF WebView 编写的现有 CSS 代码可能与 RmlUi 不兼容,可能需要定制。<br>
+更多信息可以在 <a href="https://mikke89.github.io/RmlUiDoc/pages/rcss.html">RmlUi 文档</a> 中找到。</p>
+<h2 id="与-cef-webview-的比较">与 CEF WebView 的比较</h2>
+<p><strong>优点</strong></p>
 <ul>
-<li>lower resource consumption</li>
-<li>direct control by the alt:V client, resulting in:</li>
-<li>better performance</li>
-<li>higher update rate</li>
+<li>资源消耗更低</li>
+<li>由 alt:V 客户端直接控制,导致:</li>
+<li>性能更高</li>
+<li>更高的更新频率</li>
 </ul>
-<p><strong>Disadvantages</strong></p>
+<p><strong>缺点</strong></p>
 <ul>
-<li>less functionality due to XHTML1 and CSS2 standards</li>
-<li>no support for UI frameworks (for example VueJS, React, Angular, ...)</li>
+<li>由于 XHTML1 和 CSS2 标准,功能较少</li>
+<li>不支持 UI 框架(例如 VueJS、React、Angular 等)</li>
 </ul>
-<h2 id="when-to-use-rmlui">When to use RmlUi</h2>
-<p>Due to the lower functionality and the lack of support for UI frameworks, the use of RmlUi is recommended only for simple sites or sites that benefit from a higher update rate.<br>
-For example, the display of <a href="nametags.html">name tags</a> which are positioned relative to the respective entity requires a high update rate which is not possible using a CEF WebView.</p>
-<h2 id="documentation">Documentation</h2>
-<p>The programming language specific documentation can be found under the respective module documentation:</p>
+<h2 id="何时使用-rmlui">何时使用 RmlUi</h2>
+<p>由于功能较少和不支持 UI 框架,只建议在简单的网站或受益于更高更新频率的网站使用 RmlUi。<br>
+例如,显示<a href="nametags.html">姓名标签</a>(相对于各实体定位),需要很高的更新频率,使用 CEF WebView 无法实现。</p>
+<h2 id="文档">文档</h2>
+<p>特定编程语言的文档可以在各自的模块文档下找到:</p>
 <ul>
 <li>JavaScript
 <ul>
