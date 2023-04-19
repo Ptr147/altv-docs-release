@@ -195,14 +195,22 @@ earlyAuthUrl = &quot;https://example.com/login&quot;
 # 您的服务器是否应使用 CDN
 useCdn = false
 # CDN 页面的 URL
-cdnUrl = &quot;https://cdn.example.com&quot;# alt:V 服务器是否应将所有客户端玩家名称发送给连接
-sendPlayerNames = true  # 应加载的所有资源的数组
+cdnUrl = &quot;https://cdn.example.com&quot;
+
+# alt:V 服务器是否应在连接时发送所有客户端的玩家名称
+sendPlayerNames = true
+
+# 在玩家连接后 自动将玩家生成至 0,0,71
+spawnAfterConnect = true
+
+# 应加载的所有资源的数组
 resources = [
     &quot;myResource&quot;,
     # 从 alt:V 10.0 开始,您还可以使用子目录中的资源 
     &quot;vehicles/firstVehicle&quot;,
     &quot;vehicles/secondVehicle&quot;
-]# 应加载的所有模块的数组
+]
+# 应加载的所有模块的数组
 modules = [
     &quot;js-module&quot;,
     &quot;csharp-module&quot;

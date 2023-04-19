@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_server_BaseObject_getByID">getByID(BaseObjectType, number)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_deleteMeta">deleteMeta(string)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_deleteMeta_1">deleteMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_hasMeta">hasMeta(string)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_hasMeta_1">hasMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_getMeta">getMeta&lt;K extends string&gt;(Exclude&lt;K, never&gt;)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_getMeta_1">getMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_getMeta_2">getMeta&lt;V extends unknown&gt;(string)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_setMeta">setMeta&lt;K extends string&gt;(K, InterfaceValueByKey&lt;ICustomBaseObjectMeta, K, unknown, void&gt;)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_setMeta_1">setMeta&lt;K extends never&gt;(K, ICustomBaseObjectMeta[K])</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_setMeta_2">setMeta&lt;V extends unknown, K extends string&gt;(K, InterfaceValueByKey&lt;ICustomBaseObjectMeta, K, V, void&gt;)</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_server_BaseObject_getByID">getByID(BaseObjectType, number)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_deleteMeta">deleteMeta(string)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_deleteMeta_1">deleteMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_hasMeta">hasMeta(string)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_hasMeta_1">hasMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_getMeta">getMeta&lt;K extends string&gt;(Exclude&lt;K, never&gt;)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_getMeta_1">getMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_getMeta_2">getMeta&lt;V extends unknown&gt;(string)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_setMeta">setMeta&lt;K extends string&gt;(K, InterfaceValueByKey&lt;ICustomBaseObjectMeta, K, unknown, void&gt;)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_setMeta_1">setMeta&lt;K extends never&gt;(K, ICustomBaseObjectMeta[K])</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_setMeta_2">setMeta&lt;V extends unknown, K extends string&gt;(K, InterfaceValueByKey&lt;ICustomBaseObjectMeta, K, V, void&gt;)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_deleteSyncedMeta">deleteSyncedMeta(string)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_deleteSyncedMeta_1">deleteSyncedMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_setSyncedMeta">setSyncedMeta&lt;K extends string&gt;(K, InterfaceValueByKey&lt;ICustomBaseObjectSyncedMeta, K, unknown, void&gt;)</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_setSyncedMeta_1">setSyncedMeta&lt;K extends never&gt;(K, ICustomBaseObjectSyncedMeta[K])</a></li><li><a href="#_altmp_altv_types_alt_server_BaseObject_setSyncedMeta_2">setSyncedMeta&lt;V extends unknown, K extends string&gt;(K, InterfaceValueByKey&lt;ICustomBaseObjectSyncedMeta, K, V, void&gt;)</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -170,6 +170,15 @@
     </div>
     <div>
       <span class="xref">shared.BaseObject.refCount</span>
+    </div>
+    <div>
+      <span class="xref">shared.BaseObject.getSyncedMeta</span>
+    </div>
+    <div>
+      <span class="xref">shared.BaseObject.hasSyncedMeta</span>
+    </div>
+    <div>
+      <span class="xref">shared.BaseObject.getSyncedMetaKeys</span>
     </div>
   </div>
   <h6 data-noindex=""><strong>Module</strong>: <a class="xref" href="alt-server.html">alt-server</a></h6>
@@ -737,6 +746,241 @@
       </tr>
       <tr>
         <td>InterfaceValueByKey&lt;<a class="xref" href="alt-server.ICustomBaseObjectMeta.html">ICustomBaseObjectMeta</a>, K, V, void&gt;</td>
+        <td><em>value</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ptr147/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_BaseObject_deleteSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.BaseObject.deleteSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/Ptr147/altv-types/blob/master/./server/index.d.ts/#L618">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_BaseObject_deleteSyncedMeta" data-uid="@altmp/altv-types.alt-server.BaseObject.deleteSyncedMeta">deleteSyncedMeta(string)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Removes the specified key and the data connected to that specific key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public deleteSyncedMeta(key: string): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>key</em></td>
+        <td>
+          <p>The key of the value to remove.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ptr147/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_BaseObject_deleteSyncedMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.BaseObject.deleteSyncedMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/Ptr147/altv-types/blob/master/./server/index.d.ts/#L618">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_BaseObject_deleteSyncedMeta_1" data-uid="@altmp/altv-types.alt-server.BaseObject.deleteSyncedMeta_1">deleteSyncedMeta&lt;K extends never&gt;(K)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public deleteSyncedMeta&lt;K extends never&gt;(key: K): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ptr147/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_BaseObject_setSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.BaseObject.setSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/Ptr147/altv-types/blob/master/./server/index.d.ts/#L629">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_BaseObject_setSyncedMeta" data-uid="@altmp/altv-types.alt-server.BaseObject.setSyncedMeta">setSyncedMeta&lt;K extends string&gt;(K, InterfaceValueByKey&lt;ICustomBaseObjectSyncedMeta, K, unknown, void&gt;)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Stores the given value with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public setSyncedMeta&lt;K extends string&gt;(key: K, value: InterfaceValueByKey&lt;ICustomBaseObjectSyncedMeta, K, unknown, void&gt;): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td>
+          <p>The key of the value to store.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td>InterfaceValueByKey&lt;<a class="xref" href="alt-server.ICustomBaseObjectSyncedMeta.html">ICustomBaseObjectSyncedMeta</a>, K, unknown, void&gt;</td>
+        <td><em>value</em></td>
+        <td>
+          <p>The value to store.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="_altmp_altv_types_alt_server_BaseObject_setSyncedMeta_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The given value will be shared with all clients.</p>
+</div>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ptr147/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_BaseObject_setSyncedMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.BaseObject.setSyncedMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/Ptr147/altv-types/blob/master/./server/index.d.ts/#L629">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_BaseObject_setSyncedMeta_1" data-uid="@altmp/altv-types.alt-server.BaseObject.setSyncedMeta_1">setSyncedMeta&lt;K extends never&gt;(K, ICustomBaseObjectSyncedMeta[K])
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public setSyncedMeta&lt;K extends never&gt;(key: K, value: ICustomBaseObjectSyncedMeta[K]): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="alt-server.ICustomBaseObjectSyncedMeta.html">ICustomBaseObjectSyncedMeta</a>[K]</td>
+        <td><em>value</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ptr147/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_BaseObject_setSyncedMeta_2.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.BaseObject.setSyncedMeta_2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/Ptr147/altv-types/blob/master/./server/index.d.ts/#L629">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_BaseObject_setSyncedMeta_2" data-uid="@altmp/altv-types.alt-server.BaseObject.setSyncedMeta_2">setSyncedMeta&lt;V extends unknown, K extends string&gt;(K, InterfaceValueByKey&lt;ICustomBaseObjectSyncedMeta, K, V, void&gt;)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th><span style="color: red; text-transform: uppercase;">Deprecated</span></th>
+      </tr>
+    </thead>
+      <tbody>
+        <tr>
+          <td><p>See &lt;xref:%22alt-shared%22.ICustomEntitySyncedMeta&gt;</p>
+</td>
+        </tr>
+      </tbody>
+  </table>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public setSyncedMeta&lt;V extends unknown, K extends string&gt;(key: K, value: InterfaceValueByKey&lt;ICustomBaseObjectSyncedMeta, K, V, void&gt;): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td>InterfaceValueByKey&lt;<a class="xref" href="alt-server.ICustomBaseObjectSyncedMeta.html">ICustomBaseObjectSyncedMeta</a>, K, V, void&gt;</td>
         <td><em>value</em></td>
         <td>
           
