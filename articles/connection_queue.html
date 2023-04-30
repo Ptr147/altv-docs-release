@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Player connection queue </title>
+    <title>&#20160;&#20040;&#26159;&#36830;&#25509;&#38431;&#21015; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Player connection queue ">
+    <meta name="title" content="&#20160;&#20040;&#26159;&#36830;&#25509;&#38431;&#21015; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#player-connection-queue">Player connection queue</a><ul class="level2 nav bs-docs-sidenav player-connection-queue"><li><a href="#what-is-a-connection-queue">What is a connection queue</a></li><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#config">Config</a></li><li><a href="#player-queue-events">Player queue events</a></li><li><a href="#connection-info">Connection info</a></li><li><a href="#script-usage">Script usage</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#什么是连接队列">什么是连接队列</a></li><li><a href="#用法">用法</a><ul class="level2 nav bs-docs-sidenav 用法"><li><a href="#配置">配置</a></li><li><a href="#玩家队列事件当您接受拒绝连接或玩家通过取消连接断开连接时会触发connectionqueueremove事件">玩家队列事件当您接受/拒绝连接或玩家通过取消连接断开连接时,会触发connectionQueueRemove事件。</a></li><li><a href="#连接信息您可以在connectionqueueadd和connectionqueueremove事件的第一个参数中访问连接信息类实例">连接信息您可以在connectionQueueAdd和connectionQueueRemove事件的第一个参数中访问连接信息类实例。</a></li><li><a href="#脚本用法">脚本用法</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,119 +132,116 @@
                                     </ul>
                                 </span>
 
-<h1 id="player-connection-queue">Player connection queue</h1>
 
-<p>This article will explain the player connection queue added in the 9.0 update.</p>
-<h2 id="what-is-a-connection-queue">What is a connection queue</h2>
-<p>Due to the current underlying networking, each player in the queue will actually occupy a slot and increase the player count.<br>
-When the player queue is activated, the playerConnect event is triggered once the connection has been accepted.<br>
-The connection queue will place the players attempting to connect to the server in a queue. You can then accept or decline the upcoming connection at any moment.</p>
-<h2 id="usage">Usage</h2>
-<h3 id="config">Config</h3>
-<p>You have to set / add the following field in your server.toml</p>
-<pre><code class="lang-toml">connectionQueue = true
+<p>#玩家连接队列</p>
+<p>本文将解释9.0更新中添加的玩家连接队列。</p>
+<h2 id="什么是连接队列">什么是连接队列</h2>
+<p>由于当前底层网络连接,队列中的每个玩家实际上将占用一个插槽并增加玩家数。<br>当玩家队列激活时,一旦连接被接受,就会触发playerConnect事件。<br>
+连接队列将试图连接到服务器的玩家排队。然后您可以在任何时候接受或拒绝即将到来的连接。</p>
+<h2 id="用法">用法</h2>
+<h3 id="配置">配置</h3>
+<p>您必须在server.toml中设置/添加以下字段</p>
+<pre><code class="lang-toml">connectionQueue = true  
 </code></pre>
-<h3 id="player-queue-events">Player queue events</h3>
-<p>The connectionQueueRemove event is triggered when you accept / decline the connection or when the player disconnects by canceling the connection.</p>
+<h3 id="玩家队列事件当您接受拒绝连接或玩家通过取消连接断开连接时会触发connectionqueueremove事件">玩家队列事件当您接受/拒绝连接或玩家通过取消连接断开连接时,会触发connectionQueueRemove事件。</h3>
 <table>
 <thead>
 <tr>
-<th>Event Name</th>
-<th>Description</th>
+<th>事件名称</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>connectionQueueAdd</td>
-<td>Event triggered once a player is added to the connection queue</td>
+<td>一旦玩家被添加到连接队列,就会触发事件</td>
 </tr>
 <tr>
 <td>connectionQueueRemove</td>
-<td>Event triggered once a player is removed from the connection queue</td>
+<td>一旦玩家从连接队列中移除,就会触发事件</td>
 </tr>
 </tbody>
 </table>
-<h3 id="connection-info">Connection info</h3>
-<p>You have access to a connection info class instance as the first parameter of the <code>connectionQueueAdd</code> and <code>connectionQueueRemove</code> events.</p>
-<p>Functions</p>
+<h3 id="连接信息您可以在connectionqueueadd和connectionqueueremove事件的第一个参数中访问连接信息类实例">连接信息您可以在<code>connectionQueueAdd</code>和<code>connectionQueueRemove</code>事件的第一个参数中访问连接信息类实例。</h3>
+<p>函数</p>
 <table>
 <thead>
 <tr>
-<th>Function Name</th>
-<th>Description</th>
+<th>函数名称</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>connectionInfo.accept()</td>
-<td>Accept the player connection to the server.</td>
+<td>接受玩家连接到服务器。</td>
 </tr>
 <tr>
 <td>connectionInfo.decline(reason)</td>
-<td>Decline the player connection to the server with an optional reason.</td>
+<td>拒绝玩家连接到服务器,并可选提供原因。</td>
 </tr>
 </tbody>
 </table>
-<p>Properties</p>
+<p>属性</p>
 <table>
 <thead>
 <tr>
-<th>Property Name</th>
-<th>Description</th>
+<th>属性名称</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>connectionInfo.name</td>
-<td>Player name.</td>
+<td>玩家名称。</td>
 </tr>
 <tr>
 <td>connectionInfo.socialID</td>
-<td>Player social club id.</td>
+<td>玩家社交俱乐部id。</td>
 </tr>
 <tr>
 <td>connectionInfo.discordID</td>
-<td>Player discord id.</td>
+<td>玩家Discord id。</td>
 </tr>
 <tr>
 <td>connectionInfo.ip</td>
-<td>Player IP adress.</td>
+<td>玩家IP地址。</td>
 </tr>
 <tr>
 <td>connectionInfo.hwidHash</td>
-<td>Player hwidHash.</td>
+<td>玩家hwidHash。</td>
 </tr>
 <tr>
 <td>connectionInfo.hwidExHash</td>
-<td>Player hwidExHash.</td>
+<td>玩家hwidExHash。</td>
 </tr>
 <tr>
 <td>connectionInfo.authToken</td>
-<td>Player auth token if early auth was used.</td>
+<td>如果使用了提前认证,则为玩家认证令牌。</td>
 </tr>
 <tr>
 <td>connectionInfo.isDebug</td>
-<td>Whether the player client is in debug mode or not.</td>
+<td>玩家客户端是否处于调试模式。</td>
 </tr>
 <tr>
 <td>connectionInfo.branch</td>
-<td>Player client branch.</td>
+<td>玩家客户端分支。</td>
 </tr>
 <tr>
 <td>connectionInfo.build</td>
-<td>Player client build.</td>
+<td>玩家客户端生成。</td>
 </tr>
 <tr>
 <td>connectionInfo.cdnUrl</td>
-<td>CDN url if used.</td>
+<td>如果使用,则为CDN URL。</td>
 </tr>
 <tr>
 <td>connectionInfo.passwordHash</td>
-<td>Password hash entered in the server connection modal.</td>
+<td>在服务器连接模态框中输入的密码哈希。</td>
 </tr>
 </tbody>
 </table>
-<h3 id="script-usage">Script usage</h3>
+<h3 id="脚本用法">脚本用法</h3>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S">
 <ul role="tablist">
 <li role="presentation">
@@ -270,7 +267,7 @@ async function processPlayerInQueue(connectionInfo) {
 
 alt.on('connectionQueueAdd', processPlayerInQueue);
 alt.on('connectionQueueRemove', (connectionInfo) =&gt; {
-    console.log(&quot;Player removed from the queue, even if I accept the connection now it's handled!&quot;);
+    console.log(&quot;玩家已从队列中移除,即使现在我接受连接,它也已处理!&quot;);
 });
 </code></pre>
 </section>
@@ -287,7 +284,7 @@ async function processPlayerInQueue(connectionInfo: alt.ConnectionInfo): Promise
 
 alt.on('connectionQueueAdd', processPlayerInQueue);
 alt.on('connectionQueueRemove', (connectionInfo: alt.ConnectionInfo) =&gt; {
-    console.log(&quot;Player removed from the queue, even if I accept the connection now it's handled!&quot;);
+    console.log(&quot;玩家已从队列中移除,即使现在我接受连接,它也已处理!&quot;);
 });
 </code></pre>
 </section>
@@ -314,7 +311,7 @@ namespace Example
 
         private Task OnConnectionQueueRemove(IConnectionInfo _)
         {
-            Console.WriteLine(&quot;Player removed from the queue, even if I accept the connection now it's handled!&quot;);
+            Console.WriteLine(&quot;玩家已从队列中移除,即使现在我接受连接,它也已处理!&quot;);
             return Task.CompletedTask;
         }
 
