@@ -52446,19 +52446,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Audio.html",
-          "hash": "xU3yO0lj0bnNgTNqS/uAA0OoKDzCYiA9GpdH3s/q8z8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.AudioCategory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.AudioCategory.html",
-          "hash": "rZjTiOOxt0oodY3Iz5hQZEBUJuLsU0hOu6owoTK8c90="
+          "hash": "9/XbrfkSB+huePeW78Ak+I9roaU1Ua6sQP24UxmqqzM="
         }
       },
       "is_incremental": false,
@@ -52482,19 +52470,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.BaseObject.html",
-          "hash": "js4+XeKWVq7psslDPD1tIa7lVJfNZxAaJ1Jyefl5H2c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.BaseObjectType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.BaseObjectType.html",
-          "hash": "ID5ckGpklwL7oj1Xb44PmrPupbdou9484SzIjANz6E8="
+          "hash": "Fi0LPnCozBDxBeU0gFmiYmF1Sb0a8/kfGvyE+2wVE/g="
         }
       },
       "is_incremental": false,
@@ -52506,43 +52482,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Blip.html",
-          "hash": "enyfhQx3dDVqctmER1Zv6eIAix+j3ej05A6nallZOu0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.BlipColor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.BlipColor.html",
-          "hash": "9Yf1OKZpHGteW6FtWcOHoWP59k+9ajBSSfcexEX1nLs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.BlipSprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.BlipSprite.html",
-          "hash": "WL2SZbOw3pwEz/ujj6PRGR9D36iBoEIp6Av4PjNDIRY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.BodyPart.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.BodyPart.html",
-          "hash": "AJgHKjLlo+a9YuVqyslZtwBKtMACXm8/tA2qSt5eQRU="
+          "hash": "iMwVNBwozBb9wYTqvbPsH7mMB2iDZFltn6oAUVv4EH8="
         }
       },
       "is_incremental": false,
@@ -52554,31 +52494,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Checkpoint.html",
-          "hash": "s/qdXHvDx2svoJvbvxyw452Z9nfJ5ZwyrriNCS3rPW8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.CheckpointType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.CheckpointType.html",
-          "hash": "TF6NLSTEwR0CSTETdmbkCLoDCSuLcWQDBXl7PheA3VY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.ColShapeType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.ColShapeType.html",
-          "hash": "ZS4KECCYt5xokONL+ps7BCIOhLcl7MkQtxlNeenVFkE="
+          "hash": "VqmflsSAQOaEqpeLKDP2Lo6tR6zXxOo9kBUOjmGWynM="
         }
       },
       "is_incremental": false,
@@ -52590,7 +52506,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Colshape.html",
-          "hash": "IDQpVNq7qLVf0SEMlbKYBLcs2iyibPtGfO+OE4AS1Ys="
+          "hash": "12lr19LI5Ky5crGgzG79WbYAJ80NckzTGiitVQgNum4="
         }
       },
       "is_incremental": false,
@@ -52670,18 +52586,6 @@
     },
     {
       "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.ConfigFlag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.ConfigFlag.html",
-          "hash": "8ETNbvMJt2qubidxy1cHYMLkoGbHwURMknnqcYG/068="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
       "source_relative_path": "altv-types/docs/api/alt-client.Discord.yml",
       "output": {
         ".html": {
@@ -52718,35 +52622,11 @@
     },
     {
       "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.FileEncoding.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.FileEncoding.html",
-          "hash": "b7NYqxPWu9qxq9wqQqw/CvhnEezcgxnQ0uEyOshakfE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
       "source_relative_path": "altv-types/docs/api/alt-client.FocusData.yml",
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.FocusData.html",
           "hash": "SH30ofV96ZwzMm4OtosWVMYidQ+L9WwTLlcqgNze30k="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.GameFont.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.GameFont.html",
-          "hash": "0nrlioDbO9v9WIMhZcoRB8t9f5kwI4AAVkTEjy1O4iQ="
         }
       },
       "is_incremental": false,
@@ -53130,7 +53010,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.IProfileNode.html",
-          "hash": "MYGSZ4pKQAmJFDckB4R5/cPKE4cZmkIcmA4D+b5F2X4="
+          "hash": "q6NkMJtT5fl5jEPljWYA0nsMCqiMzFqRWrfN7qjcU5U="
         }
       },
       "is_incremental": false,
@@ -53166,7 +53046,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.IResourceConfig.html",
-          "hash": "ge6rLBdZ0SoCb+i1+rD/G9v8QSQFRPJhfRQG3vLtpC8="
+          "hash": "mfSIfDqaM9NvfQazVWB0TQshNCgsSu5K7EA6wOYQsZI="
         }
       },
       "is_incremental": false,
@@ -53203,18 +53083,6 @@
         ".html": {
           "relative_path": "js/api/alt-client.IVehicleHandling.html",
           "hash": "5iMlmSjQ4hJ+SqDPuYcYUNRfFftR3QBpLozm3+n0zr0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.KeyCode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.KeyCode.html",
-          "hash": "7KXcVGFl+oGeIlovHgXrfDWjV4gz1q+10OESThwuCas="
         }
       },
       "is_incremental": false,
@@ -53262,19 +53130,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.LocalVehicle.html",
-          "hash": "rl/ABY1tNRs/xDGma6/2bEVzAHZetj1mg6ykCgykNt8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.Locale.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.Locale.html",
-          "hash": "9TgJjF8jYCeToCiGQukW/wV15rHTNghqPBwG+5sy2so="
+          "hash": "utfSqE60/tjlW1r37OXoRBGOuyONAMo/CjJTMQfKh3E="
         }
       },
       "is_incremental": false,
@@ -53298,19 +53154,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Marker.html",
-          "hash": "XpK0nMnqE4X5m2E8Y8rMJYWARxqM2bDOknk2Rfx0xSQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.MarkerType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.MarkerType.html",
-          "hash": "TSfQWyxuvcILmUpQVjdGZNTJm8MbHdKtwG7828/1vJg="
+          "hash": "OiwvZEmeWgEl06mwXSux+mmgv4uKdalRl0dhmAJJEIM="
         }
       },
       "is_incremental": false,
@@ -53323,18 +53167,6 @@
         ".html": {
           "relative_path": "js/api/alt-client.MemoryBuffer.html",
           "hash": "7cXW8m4gVdtQ8Mte+18ko2FckcELd+TUQ9h9IeoWpoQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.ModelType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.ModelType.html",
-          "hash": "S2RnAiPJcjhgrgKqhz1xKNEzjPvW/J6nw0WwPzBDQD0="
         }
       },
       "is_incremental": false,
@@ -53378,30 +53210,6 @@
     },
     {
       "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.Permission.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.Permission.html",
-          "hash": "B8zjYUF/cp5WAWYuFXRVoMZup8a1k5y4HW33VsVq9wU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.PermissionState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.PermissionState.html",
-          "hash": "ddtOkHCvG1KF2nQFnb/dNHnsZ8Ni05UI8eoMjrYRHi8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
       "source_relative_path": "altv-types/docs/api/alt-client.Player.yml",
       "output": {
         ".html": {
@@ -53419,18 +53227,6 @@
         ".html": {
           "relative_path": "js/api/alt-client.PointBlip.html",
           "hash": "yfzoKx298+0gGIQGxI6VRDyitFW+IZlbb0ZKXqqt0kQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.ProfileSourceType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.ProfileSourceType.html",
-          "hash": "Y3Douxl/4X6XegZWrbQmNxBFZ5hPb7pr7Q9GgnU0Gzc="
         }
       },
       "is_incremental": false,
@@ -53490,7 +53286,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Resource.html",
-          "hash": "/cggVkseLtt++2pk/XC/AB6n4NESuOABZZoIkeCnnRE="
+          "hash": "xocpf++8dsyCgoZxcHshj6roNMYif/6yIvRowQ8LtXc="
         }
       },
       "is_incremental": false,
@@ -53515,18 +53311,6 @@
         ".html": {
           "relative_path": "js/api/alt-client.RmlElement.html",
           "hash": "nR19PP0oBYT+7AJW1TANC2Nmrwnn7LH8DcCfz2/jwDA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.StatName.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.StatName.html",
-          "hash": "P1SFu1tjBb2LjqqUjlw9lqlf56LcEIkmqdjdzon0u20="
         }
       },
       "is_incremental": false,
@@ -53562,7 +53346,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Utils_1.Keybind.html",
-          "hash": "jLL6BhqYzPMxXlkWVc/sAEmusE/0HaQ/VibMgLqBOAM="
+          "hash": "R8QYIO3/UiPn0evSMfPCMZz1jRiwr0/ad+l1avslNWg="
         }
       },
       "is_incremental": false,
@@ -53586,7 +53370,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Utils_1.html",
-          "hash": "ci7n+PYOds5DZ6OOv7n4Qra39wOAPO+Mws6g6ugG80o="
+          "hash": "rggP78JEsxfUvZ2WL7yBffyxAJc9bRcR2ceeoc4VdZE="
         }
       },
       "is_incremental": false,
@@ -53622,31 +53406,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Vehicle.html",
-          "hash": "BRi7Aw5PNiS/XphAXHB8kdo+0EDNWxc5xyP1mzP7jvs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.VehicleIndicatorLights.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.VehicleIndicatorLights.html",
-          "hash": "NZ/HA2/TmVjx4IhP2cV7yuKk5AI/E1CGJ/iHGiuSM4E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.VehicleLockState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.VehicleLockState.html",
-          "hash": "mHADh7lCcLsH2Zei0aPiAPU6duNR6o9T6ge9qqeUL84="
+          "hash": "euZKHdysM/KmnH2Oo+m3EuLr1QTt720DmRVT6BE/wS8="
         }
       },
       "is_incremental": false,
@@ -53682,22 +53442,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Voice.html",
-          "hash": "q5tTBF5UQYbP0Iyk6wdkYam9HGLKXn3WYcr9hQVkq5M="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.WatermarkPosition.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.WatermarkPosition.html",
-          "hash": "HpnhzqsSphXSGIy0CiEaliwotucUYbgbkNS6GD3ix58="
+          "hash": "Dtww2pFuS+OHJc46N9kO3dwthXolgoKIymZucyMJtn4="
         }
       },
       "is_incremental": false,
@@ -53721,19 +53466,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.WebSocketClient.html",
-          "hash": "UpuKJOarjxJj0PqCdciGevRvQvQvP25Zzb2WofCIWQQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.WebSocketReadyState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.WebSocketReadyState.html",
-          "hash": "Hq8DH7p5Sg35bjY951lkHZxikgVogdbaYI1pImMDJh8="
+          "hash": "xFTe4avaq/0Dk0kwgzJsh7kqqRQ9vibTr7bfnFIdeFw="
         }
       },
       "is_incremental": false,
@@ -53776,15 +53509,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "TypeScriptReference",
       "source_relative_path": "altv-types/docs/api/alt-client.yml",
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.html",
-          "hash": "Hp/0M94XqirkAIXCwUToRTxwhnoqM+nQeo857Ls4JMo="
+          "hash": "Pty2GP4VmEoB/m2d9r1OYQtT8t7pWKEvCJxRbwz29p8="
         }
       },
       "is_incremental": false,
@@ -53804,35 +53534,11 @@
     },
     {
       "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.AudioCategory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.AudioCategory.html",
-          "hash": "FuxML+ir2Pdp7ZBY5kfL/whJ3la3SydV88liDJuigmU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
       "source_relative_path": "altv-types/docs/api/alt-server.BaseObject.yml",
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.BaseObject.html",
-          "hash": "5ceBJVCzBNVqzzZZq9yWD7sF//vHTDPgXaY8GUnp/Do="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.BaseObjectType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.BaseObjectType.html",
-          "hash": "dBqOxtgtQJErld2re7nm2pHU9fbF1mjkUizCF6gS/C0="
+          "hash": "l3t+HfWlBXbkQXCvdzIfF2JAldZ2fNNxE7vaNvoF2wo="
         }
       },
       "is_incremental": false,
@@ -53844,55 +53550,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Blip.html",
-          "hash": "7KP/0u8ku/SO1m9hn6oVgGRj3t5LStc+dvzFSaCD08M="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.BlipColor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.BlipColor.html",
-          "hash": "h/8HJXIdyNZ+jm0OtHdZGJAphLd/aykHpDhy5yz6x4Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.BlipSprite.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.BlipSprite.html",
-          "hash": "dQyYAfBLy94uFTKGf6nMFBaFKnyWd44NoSWAqLB13h0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.BlipType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.BlipType.html",
-          "hash": "Wq7We6Ozf0t0ThQH3e5pVO0X0/9R+IpMLEWZkrd5iKw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.BodyPart.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.BodyPart.html",
-          "hash": "sePh9AQJSRLD4XL8DGEhhvzFhhdq7yJTA2XtJGe75eE="
+          "hash": "WNIILNIMDEcYXAHBDHyzEvpxdmGzRh+Vhi9KZZI5llU="
         }
       },
       "is_incremental": false,
@@ -53904,31 +53562,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Checkpoint.html",
-          "hash": "gLioSxH2v6uOA5IDFxOACEaI1A91zYjbuKXsP6jn2a0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.CheckpointType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.CheckpointType.html",
-          "hash": "Ff+SmuYkgVw0kGlxh+EwW7Nl/tFPlQdTlmriHFJoCKU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.ColShapeType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.ColShapeType.html",
-          "hash": "IwvXQaVUZC+Plibbmnz8UUFIH78UO1tlGFCgwqgYKsQ="
+          "hash": "tWVJfqE4LYaVx6OzVfdtQjq4pX9SrOVXExmO/8UFopo="
         }
       },
       "is_incremental": false,
@@ -53940,7 +53574,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Colshape.html",
-          "hash": "YFiciAm4/zOaX7dGWbtWQz/l91M/k87A1t0+Q9gCQqw="
+          "hash": "Im/h0ri+9MLJwwwQ2hBDBA8bmKG1B+AI9TO9PkoEqtg="
         }
       },
       "is_incremental": false,
@@ -54020,18 +53654,6 @@
     },
     {
       "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.ConnectDeniedReason.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.ConnectDeniedReason.html",
-          "hash": "MGjgVvmOkk6PAq5+aBv333VpqeQipe51upPGdzfJ54Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
       "source_relative_path": "altv-types/docs/api/alt-server.Entity.yml",
       "output": {
         ".html": {
@@ -54044,35 +53666,11 @@
     },
     {
       "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.ExplosionType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.ExplosionType.html",
-          "hash": "sXw1qQW1Cl2ytlxxPs6lbVxj66jGBjM+N3OwEJyEOWQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
       "source_relative_path": "altv-types/docs/api/alt-server.File.yml",
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.File.html",
           "hash": "x+vg6Pf9VobgmsrXXjueBDyCE/AS6CVM3bZkpSdbEVs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.FileEncoding.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.FileEncoding.html",
-          "hash": "yoJB+rVc4klnCXhddFc081XatS03SJ4UUG1QbKfflws="
         }
       },
       "is_incremental": false,
@@ -54480,7 +54078,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.IResourceConfig.html",
-          "hash": "gGvkiBRknPLT61Ory2/pPga8ROevKLO/+vN80z79iI4="
+          "hash": "D+0dgJtwa6FHju24pF+Th0jURet4EqfBMbTBcjr2T5Q="
         }
       },
       "is_incremental": false,
@@ -54540,7 +54138,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.IVehicleModel.html",
-          "hash": "W1CCRCq7wiRLDFM5wXwTEG98zBpKYJwyJql5snik05E="
+          "hash": "7K3T/zapI+xR6mcww/i5V1VY7eORedR4sH1RliQvkJQ="
         }
       },
       "is_incremental": false,
@@ -54572,47 +54170,11 @@
     },
     {
       "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.KeyCode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.KeyCode.html",
-          "hash": "ab0ZR+5oAW4zYGdWPb1g6ODKLWYHG7DJlxIzJ7H2zRg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
       "source_relative_path": "altv-types/docs/api/alt-server.Marker.yml",
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Marker.html",
-          "hash": "eGYTKkaNaq48lp0Bhv2DU51spGpTEV0A1cDkYXgA/Hk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.MarkerType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.MarkerType.html",
-          "hash": "Fl/Gj23VrTIQT/af7H9mhAbuKCgYpjqWtNzHWJXVMAM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.ModelType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.ModelType.html",
-          "hash": "NCLqY0BwguSxTVBGejYsUvjj470L1rSLO+yaz0lueeA="
+          "hash": "oZJtKxmkRPotSibqVy1vU/ZqVc8pDdOwX/mJHMjqp38="
         }
       },
       "is_incremental": false,
@@ -54632,18 +54194,6 @@
     },
     {
       "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.NumberPlateStyle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.NumberPlateStyle.html",
-          "hash": "Zq/Id2q3e8PZaXLfiNxq2qpVlX20li/UMBxBk11cMU4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
       "source_relative_path": "altv-types/docs/api/alt-server.Ped.yml",
       "output": {
         ".html": {
@@ -54656,23 +54206,11 @@
     },
     {
       "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.Permission.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.Permission.html",
-          "hash": "hTmfjTMkGpu4W0g4pqRN3PAsE4f6UKmQocImsVqSHEU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
       "source_relative_path": "altv-types/docs/api/alt-server.Player.yml",
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Player.html",
-          "hash": "ls4ikiL7kLAUgIluGwUXoIWjNJ0ocvVsGTPwVJHZijw="
+          "hash": "7PMikvWNrYolY9E5qsgZyU2+1C29upZaiP3RstwHY8U="
         }
       },
       "is_incremental": false,
@@ -54709,18 +54247,6 @@
         ".html": {
           "relative_path": "js/api/alt-server.RGBA.html",
           "hash": "eWB6/zsHKKOxL6bWtcJhzVfhwFZ6gk76+UdOBx4Ckfg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.RadioStation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.RadioStation.html",
-          "hash": "epWmTM1gfNvEDa5HbJCtroQqc9SXm/fntWfTfiFgPN4="
         }
       },
       "is_incremental": false,
@@ -54804,103 +54330,7 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Vehicle.html",
-          "hash": "vNgtfzP70kTUKgPGoUsMCGthJOgWO7pjbWFMvJn4TTA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.VehicleBumper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.VehicleBumper.html",
-          "hash": "6PXSTpCmTCSL0aln5nbl9rJXscaamNBBW9ymmoW6GcE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.VehicleBumperDamage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.VehicleBumperDamage.html",
-          "hash": "678H2cV+Fe7j7NMAg4OdTl6hw2e0WA7qcrnebKzWOdw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.VehicleDoor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.VehicleDoor.html",
-          "hash": "JfhRmQE+5f6VAtq3Aj4RijPNT6wPQqjxW1OeBaYju5c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.VehicleDoorState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.VehicleDoorState.html",
-          "hash": "YQJr0k3jV4XJQDwCGLJPtXLG4j5petAxq+Pe8IGBkTc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.VehicleLockState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.VehicleLockState.html",
-          "hash": "1+DAiGGbT1PmUkXOrYqYYbwlDfb/E1e1aEfwmX+x4AI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.VehicleModType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.VehicleModType.html",
-          "hash": "SWCEzZ07DC8jz02ZDgIH201YlyOyKh5oyyT5iX+McEs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.VehiclePart.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.VehiclePart.html",
-          "hash": "QE7D2kR/CJKyFl1y6VGfwCvKxiMAvF5mWE/2zTfn8pw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.VehiclePartDamage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.VehiclePartDamage.html",
-          "hash": "zyQBpslFHwKopJaMPMSwMtcROkgwelTmwDbaJYJH6nA="
+          "hash": "tLc6+cL1zgE65ycTPTxqu0g2STIjgpiEyjoZGUmfyp8="
         }
       },
       "is_incremental": false,
@@ -54944,30 +54374,6 @@
     },
     {
       "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.WeatherType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.WeatherType.html",
-          "hash": "krhkZA4Cc4GdqkFhtLB9VCU2JfkdIVJUMXAA11ibL6w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-server.WindowTint.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-server.WindowTint.html",
-          "hash": "VWXf4Zb2I/UbZrzfW+9yLoxqqvt2Fl+9syhBNUZEXvk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "TypeScriptReference",
       "source_relative_path": "altv-types/docs/api/alt-server.WorldObject.yml",
       "output": {
         ".html": {
@@ -54979,15 +54385,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "TypeScriptReference",
       "source_relative_path": "altv-types/docs/api/alt-server.yml",
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.html",
-          "hash": "K0ogL/ZZi0f3cI1wxFm5Xo+/kbDs1LrhCD5SOltuN88="
+          "hash": "JmeJmNXm22FN5aj7BP0FiGXvq4FT8Zt5U27PDo7dTyc="
         }
       },
       "is_incremental": false,
@@ -55659,7 +55062,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/contributing.html",
-          "hash": "TzoWddIbNI1maa4bhaBJredz3X+R33M3XIYw6/UlgQY="
+          "hash": "9DpkVA5amJthb1POUQJl5J5NCJBnxGm0KCCZbQun8NA="
         }
       },
       "is_incremental": false,
@@ -55923,7 +55326,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/troubleshooting/server.html",
-          "hash": "JjLpzyp3vTZdNBj94AD8NfRQi2aWQdzsyHRQnScXJAo="
+          "hash": "S2T0Wev9FGFCbp9mJwyh0ffWITQnqyaidjuZbQnxTrg="
         }
       },
       "is_incremental": false,
@@ -65740,18 +65143,6 @@
         ".html": {
           "relative_path": "cs/api/AltV.Net.Shared.Elements.Entities.ISharedLocalPed.html",
           "hash": "lW1x6p1kGYEbYUYxoUJx80awmDS90jLZqUGbbnN04v4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "coreclr-module/docs/api/AltV.Net.Shared.Elements.Entities.ISharedLocalVehicle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "cs/api/AltV.Net.Shared.Elements.Entities.ISharedLocalVehicle.html",
-          "hash": "4LLMyHLhzMYT7p2eQrtZMfHUBRJSonBS3B0eDsDid00="
         }
       },
       "is_incremental": false,

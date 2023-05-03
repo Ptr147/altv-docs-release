@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Troubleshoot Server </title>
+    <title>&#25490;&#38500;&#26381;&#21153;&#22120;&#25925;&#38556; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Troubleshoot Server ">
+    <meta name="title" content="&#25490;&#38500;&#26381;&#21153;&#22120;&#25925;&#38556; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#troubleshoot-server">Troubleshoot Server</a><ul class="level2 nav bs-docs-sidenav troubleshoot-server"><li><a href="#known-issues--solutions">Known issues &amp; solutions</a><ul class="level3 nav bs-docs-sidenav known-issues--solutions"><li><a href="#warning-to-load-an-es-module-set-type-module-in-the-packagejson-or-use-the-mjs-extension">Warning: To load an ES module, set &quot;type&quot;: &quot;module&quot; in the package.json or use the .mjs extension.</a></li><li><a href="#failed-to-load-js-moduledll-win32-error-127-7f">Failed to load &quot;js-module.dll&quot; Win32 error: 127 (7f)</a></li><li><a href="#module-outdated-module-uses-sdk-vxx-server-requires-sdk-vxx">Module outdated, module uses SDK vXX, server requires SDK vXX</a></li><li><a href="#error-while-reading-servertoml-on-line-xx-column-reason-invalid-token">Error while reading server.toml on line xx, column. Reason: invalid token</a></li><li><a href="#master-server-connect-failed-invalid-token">Master server connect failed. Invalid token</a></li><li><a href="#unhandled-exception-received-an-unhandled-exception-from-">Unhandled Exception: Received an unhandled exception from: ...</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#排除服务器故障">排除服务器故障</a><ul class="level2 nav bs-docs-sidenav 排除服务器故障"><li><a href="#已知问题和解决方案">已知问题和解决方案</a><ul class="level3 nav bs-docs-sidenav 已知问题和解决方案"><li><a href="#警告要加载es模块请在packagejson中设置-typemodule-或使用mjs扩展名">警告:要加载ES模块,请在package.json中设置 &quot;type&quot;:&quot;module&quot; 或使用.mjs扩展名。</a></li><li><a href="#无法加载js-moduledll-win32-错误127-7f">无法加载&quot;js-module.dll&quot; Win32 错误:127 (7f)</a></li><li><a href="#模块过时模块使用sdk-vxx服务器需要sdk-vxx">模块过时,模块使用SDK vXX,服务器需要SDK vXX</a></li><li><a href="#读取servertoml第xx行第xx列时出错原因无效标记">读取server.toml第xx行,第xx列时出错。原因:无效标记</a></li><li><a href="#主服务器连接失败无效令牌">主服务器连接失败。无效令牌</a></li><li><a href="#未处理异常收到来自的未处理异常">未处理异常:收到来自...的未处理异常</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,27 +132,27 @@
                                     </ul>
                                 </span>
 
-<h1 id="troubleshoot-server">Troubleshoot Server</h1>
+<h1 id="排除服务器故障">排除服务器故障</h1>
 
-<p>Sometimes when you are running a server, some issues can occur. Most of these issues are repetitive and easy to solve. Therefore, this article collects the most common errors and their solutions.</p>
-<h2 id="known-issues--solutions">Known issues &amp; solutions</h2>
-<h4 id="warning-to-load-an-es-module-set-type-module-in-the-packagejson-or-use-the-mjs-extension">Warning: To load an ES module, set &quot;type&quot;: &quot;module&quot; in the package.json or use the .mjs extension.</h4>
-<p>This issue is caused by missing the <code>type</code> configuration inside your package.json. To solve this problem you need to add <code>&quot;type&quot;:&quot;module&quot;</code> in your package.json</p>
-<h4 id="failed-to-load-js-moduledll-win32-error-127-7f">Failed to load &quot;js-module.dll&quot; Win32 error: 127 (7f)</h4>
-<p>If you head into your alt:V server directory, you will most likely find a <code>libnode.dll</code> file. In order to solve this issue, you need to delete this file.</p>
-<h4 id="module-outdated-module-uses-sdk-vxx-server-requires-sdk-vxx">Module outdated, module uses SDK vXX, server requires SDK vXX</h4>
-<p>You will sometimes get this error especially if there is a new release. Usually, it is enough to update your server by downloading the latest alt:V server files which include the latest <code>csharp-module.dll</code> or <code>js-module.dll</code>.</p>
-<h4 id="error-while-reading-servertoml-on-line-xx-column-reason-invalid-token">Error while reading server.toml on line xx, column. Reason: invalid token</h4>
-<p>This issue mostly occurs when strings are not put in double quotes. For example, the URL of your website is not put in double quotes inside the <code>server.toml</code> will cause this issue. To find the issue inside your<code>server.toml</code> you should pay attention to the error message which gives you the exact line.</p>
-<h4 id="master-server-connect-failed-invalid-token">Master server connect failed. Invalid token</h4>
-<p>Inside your <code>server.toml</code> you can find a configuration variable called <code>announce</code>. If this is set to <code>true</code>, you will need a <strong>valid</strong> token. Therefore, you need to request a master list token from the alt:V Master-Bot. To receive a token, you need to send a single message with the content &quot;token&quot; to <code>Master-Bot#3667</code> on discord. To obtain a token you have to meet one of the following requirements:</p>
+<p>有时候在运行服务器时,会出现一些问题。大多数这些问题都是重复的并且易于解决。因此,本文收集了最常见的错误及其解决方案。</p>
+<h2 id="已知问题和解决方案">已知问题和解决方案</h2>
+<h4 id="警告要加载es模块请在packagejson中设置-typemodule-或使用mjs扩展名">警告:要加载ES模块,请在package.json中设置 <code>&quot;type&quot;:&quot;module&quot;</code> 或使用.mjs扩展名。</h4>
+<p>此问题是由package.json中缺少 <code>type</code> 配置引起的。要解决此问题,您需要在package.json中添加 <code>&quot;type&quot;:&quot;module&quot;</code> 。</p>
+<h4 id="无法加载js-moduledll-win32-错误127-7f">无法加载&quot;js-module.dll&quot; Win32 错误:127 (7f)</h4>
+<p>如果您进入alt:V服务器目录,您很可能会找到一个 <code>libnode.dll</code> 文件。为了解决此问题,您需要删除此文件。</p>
+<h4 id="模块过时模块使用sdk-vxx服务器需要sdk-vxx">模块过时,模块使用SDK vXX,服务器需要SDK vXX</h4>
+<p>有时候您会遇到此错误,特别是如果有新版本发布。通常,更新您的服务器以下载最新的alt:V服务器文件(包括最新的 <code>csharp-module.dll</code> 或 <code>js-module.dll</code>)就足够了。</p>
+<h4 id="读取servertoml第xx行第xx列时出错原因无效标记">读取server.toml第xx行,第xx列时出错。原因:无效标记</h4>
+<p>此问题通常发生在字符串未放在双引号内时。例如,如果您的网站URL未在 <code>server.toml</code> 内的双引号内,将导致此问题。要在您的 <code>server.toml</code> 内找到问题,您应该注意错误消息,它会给您确切的行号。</p>
+<h4 id="主服务器连接失败无效令牌">主服务器连接失败。无效令牌</h4>
+<p>在您的 <code>server.toml</code> 中,您可以找到一个名为 <code>announce</code> 的配置变量。如果此变量设置为 <code>true</code>, 您将需要一个 <strong>有效</strong> 的令牌。因此,您需要从alt:V主机列表机器人请求主机列表令牌。要接收令牌,您需要向Discord上的 <code>Master-Bot#3667</code> 发送一条内容为&quot;token&quot;的消息。要获得令牌,您必须满足以下要求之一:</p>
 <ol>
-<li>You can obtain a token for broadcasting to the master list by waiting 30 days to generate one.</li>
-<li>You can obtain a token immediately by subscribing as a Bronze Patreon to generate your token. If you would like to go down this route you can visit <a href="https://www.patreon.com/altVMP">https://www.patreon.com/altVMP</a> to subscribe.</li>
+<li>您可以通过等待30天生成一个令牌来获得广播到主机列表的令牌。</li>
+<li>您可以立即通过订阅铜牌赞助者生成令牌。如果您想选择这条路线,可以访问https://www.patreon.com/altVMP订阅。</li>
 </ol>
-<p>Keep in mind that you usually do not need a master list announcement while you are in the development stage. You can set the <code>announce</code> flag to <code>false</code> inside your <code>server.toml</code>.</p>
-<h4 id="unhandled-exception-received-an-unhandled-exception-from-">Unhandled Exception: Received an unhandled exception from: ...</h4>
-<p>When you use C# on your server-side, you will encounter this problem sometimes. You can easily solve this problem by updating the alt:V NuGet packages and rebuilding your resource.</p>
+<p>请记住,在开发阶段,您通常不需要主机列表公告。您可以在 <code>server.toml</code> 内将 <code>announce</code>标 志设置为 <code>false</code> 。</p>
+<h4 id="未处理异常收到来自的未处理异常">未处理异常:收到来自...的未处理异常</h4>
+<p>当您在服务器端使用C#时,您会有时遇到此问题。您可以轻松解决此问题,方法是更新alt:V NuGet包并重新生成您的资源。</p>
 </article>
                     </div>
 
