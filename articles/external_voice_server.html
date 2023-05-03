@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>External voice server </title>
+    <title>&#22806;&#37096;&#35821;&#38899;&#26381;&#21153;&#22120; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="External voice server ">
+    <meta name="title" content="&#22806;&#37096;&#35821;&#38899;&#26381;&#21153;&#22120; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#external-voice-server">External voice server</a><ul class="level2 nav bs-docs-sidenav external-voice-server"><li><a href="#setup-external-voice-server">Setup external voice server</a></li><li><a href="#integrate-external-voice-server">Integrate external voice server</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#外部语音服务器">外部语音服务器</a><ul class="level2 nav bs-docs-sidenav 外部语音服务器"><li><a href="#设置外部语音服务器">设置外部语音服务器</a></li><li><a href="#集成外部语音服务器">集成外部语音服务器</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,43 +132,43 @@
                                     </ul>
                                 </span>
 
-<h1 id="external-voice-server">External voice server</h1>
+<h1 id="外部语音服务器">外部语音服务器</h1>
 
-<p>Depending on the number of players, it may be necessary to run the voice server on an external server, for example, to route network traffic to another network card or to use dedicated resources for the voice server.</p>
-<p>This article deals with the setup of the external voice server and the connection to the alt:V server.</p>
-<h2 id="setup-external-voice-server">Setup external voice server</h2>
-<p>First of all, the voice server must be downloaded, the links for this can be found in the <a href="https://docs.altv.mp/articles/cdn_links.html">CDN</a> article under the topics Windows Server and Linux Server.</p>
-<p>After the download, the voice server can be placed on any server (it can also be the same device as the alt:V server).</p>
-<p>To configure it create a file named voice.toml, add the following content and adjust it accordingly:</p>
-<pre><code class="lang-toml"># IP address of the external voice server used to receive the alt:V servers voice connection
-# Can be a private ip or 0.0.0.0 to accept all
-host = '0.0.0.0'
-# Port used in combination with the ip above
-port = 7798
-# IP address which is used to receive the clients connections
-# Should be a public ip or 0.0.0.0 to accept all
-playerHost = '0.0.0.0'
-# Port used for the clients connections
-playerPort = 7799
-# Secret shared between the alt:V server and the external voice server
+<p>根据玩家数量,可能需要在外部服务器上运行语音服务器,例如,将网络流量路由到另一个网络卡或为语音服务器使用专用资源。</p>
+<p>本文介绍外部语音服务器的设置和与alt:V服务器的连接。</p>
+<h2 id="设置外部语音服务器">设置外部语音服务器</h2>
+<p>首先,必须下载语音服务器,可以在<a href="https://docs.altv.mp/articles/cdn_links.html">CDN</a>文章的Windows Server和Linux Server主题下找到链接。</p>
+<p>下载后,语音服务器可以放置在任何服务器上(它也可以是alt:V服务器的同一设备)。</p>
+<p>要配置它,创建一个名为voice.toml的文件,添加以下内容并相应地调整它:</p>
+<pre><code class="lang-toml"># 用于接收alt:V服务器语音连接的外部语音服务器的IP地址  
+# 可以是专用IP或0.0.0.0以接受所有连接  
+host = '0.0.0.0'  
+# 与上述IP一起使用的端口  
+port = 7798  
+# 用于接收客户端连接的IP地址  
+# 应为公共IP或0.0.0.0以接受所有连接  
+playerHost = '0.0.0.0'  
+# 客户端连接使用的端口  
+playerPort = 7799  
+# alt:V服务器与外部语音服务器共享的密钥  
 secret = 1234567890
 </code></pre>
-<p>Now you only have to start the voice server and continue with the integration of the alt:V server.</p>
-<h2 id="integrate-external-voice-server">Integrate external voice server</h2>
-<p>To integrate the alt:V server only small adjustments to the server.toml are necessary:</p>
-<pre><code class="lang-toml">[voice]
-# The bitrate of the voice server
-bitrate = 64000
-# The secret for the external server (only needed when using externalHost)
-# The secret must consist of numeric values only
-externalSecret = 1234567890
-# The external host address (leave 127.0.0.1, if voice-server is on same machine)
-externalHost = &quot;127.0.0.1&quot;
-# The external host port
-externalPort = 7798
-# The external host public address (should be the ip address of your server, not localhost!)
-externalPublicHost = &quot;xx.xx.xx.xx&quot;
-# The external host public port
+<p>现在您只需启动语音服务器并继续集成 alt:V 服务器。</p>
+<h2 id="集成外部语音服务器">集成外部语音服务器</h2>
+<p>要集成 alt:V 服务器,只需对 server.toml 进行少量调整:</p>
+<pre><code class="lang-toml">[voice]  
+# 语音服务器的比特率  
+bitrate = 64000  
+# 外部服务器的密钥(仅在使用externalHost时需要)  
+# 密钥必须仅由数字组成  
+externalSecret = 1234567890  
+# 外部主机地址(如果语音服务器在同一台机器上,请留空127.0.0.1)  
+externalHost = &quot;127.0.0.1&quot;  
+# 外部主机端口  
+externalPort = 7798  
+# 外部主机公共地址(应为您的服务器IP地址,而不是localhost!)  
+externalPublicHost = &quot;xx.xx.xx.xx&quot;  
+# 外部主机公共端口  
 externalPublicPort = 7799
 </code></pre>
 </article>

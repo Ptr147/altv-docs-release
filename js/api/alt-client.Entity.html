@@ -203,8 +203,7 @@
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Array with all entities.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -225,18 +224,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="_altmp_altv_types_alt_client_Entity_all_remarks" class="decalaration">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This creates a clone of the array everytime it is called.
-It is advised to call this once and store the result in a variable, before iterating over it.</p>
-</div>
-  <h5 id="_altmp_altv_types_alt_client_Entity_all_examples" class="decalaration">Examples</h5>
-  <pre><code class="lang-js">const entities = alt.Entity.all; // Store it in a variable, so it doesn't create a copy of the array on each iteration
-for(let i = 0; i &lt; entities.length; i++)
-{
-  alt.log(`${entities[i].id}`); // Logs the id of every entity
-}
-</code></pre>
-
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/Ptr147/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_id.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -249,8 +236,7 @@ for(let i = 0; i &lt; entities.length; i++)
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Entity unique id</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -283,8 +269,7 @@ for(let i = 0; i &lt; entities.length; i++)
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Internal game id that can be used in native calls</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -317,8 +302,7 @@ for(let i = 0; i &lt; entities.length; i++)
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Network owner of the entity.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -339,13 +323,6 @@ for(let i = 0; i &lt; entities.length; i++)
       </tr>
     </tbody>
   </table>
-  <h5 id="_altmp_altv_types_alt_client_Entity_netOwner_remarks" class="decalaration">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Network owner is responsible for syncing entity with the server.
-It changes when actual network owner passes the migration range,
-then the new one is determined based on distance from the entity
-(if entity is a vehicle, then the driver will take priority for becoming network owner).
-Disabling migration range will stop this process from happening until turned on again.</p>
-</div>
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/Ptr147/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_isSpawned.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.isSpawned%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -358,8 +335,7 @@ Disabling migration range will stop this process from happening until turned on 
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Returns whether the entity is spawned in the game world.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -380,9 +356,6 @@ Disabling migration range will stop this process from happening until turned on 
       </tr>
     </tbody>
   </table>
-  <h5 id="_altmp_altv_types_alt_client_Entity_isSpawned_remarks" class="decalaration">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This does the same thing as checking if the <a class="xref" href="alt-client.Entity.html#_altmp_altv_types_alt_client_Entity_scriptID">scriptID</a> is 0.</p>
-</div>
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/Ptr147/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_model.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.model%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -395,8 +368,7 @@ Disabling migration range will stop this process from happening until turned on 
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Hash of entity model</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -429,8 +401,7 @@ Disabling migration range will stop this process from happening until turned on 
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Object position</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -463,8 +434,7 @@ Disabling migration range will stop this process from happening until turned on 
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Entity rotation in radians</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -532,8 +502,7 @@ Disabling migration range will stop this process from happening until turned on 
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Retrieves the entity from the pool.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -553,8 +522,7 @@ Disabling migration range will stop this process from happening until turned on 
         <td><span class="xref">number</span></td>
         <td><em>id</em></td>
         <td>
-          <p>The id of the entity.</p>
-
+          
           
         </td>
       </tr>
@@ -571,8 +539,7 @@ Disabling migration range will stop this process from happening until turned on 
     <tbody>
       <tr>
         <td>null | <a class="xref" href="alt-client.Entity.html">Entity</a></td>
-        <td><p>Entity if it was found, otherwise null.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -588,8 +555,7 @@ Disabling migration range will stop this process from happening until turned on 
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Retrieves the entity from the pool.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -609,8 +575,7 @@ Disabling migration range will stop this process from happening until turned on 
         <td><span class="xref">number</span></td>
         <td><em>scriptID</em></td>
         <td>
-          <p>The script id of the entity.</p>
-
+          
           
         </td>
       </tr>
@@ -627,8 +592,7 @@ Disabling migration range will stop this process from happening until turned on 
     <tbody>
       <tr>
         <td>null | <a class="xref" href="alt-client.Entity.html">Entity</a></td>
-        <td><p>Entity if it was found, otherwise null.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -738,19 +702,6 @@ Disabling migration range will stop this process from happening until turned on 
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th><span style="color: red; text-transform: uppercase;">Deprecated</span></th>
-      </tr>
-    </thead>
-      <tbody>
-        <tr>
-          <td><p>See <a class="xref" href="alt-client.ICustomEntityMeta.html">ICustomEntityMeta</a></p>
-</td>
-        </tr>
-      </tbody>
-  </table>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-typeScript hljs">public setMeta&lt;V extends unknown, K extends string&gt;(key: K, value: InterfaceValueByKey&lt;ICustomEntityMeta, K, V, void&gt;): void</code></pre>
@@ -979,19 +930,6 @@ Disabling migration range will stop this process from happening until turned on 
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th><span style="color: red; text-transform: uppercase;">Deprecated</span></th>
-      </tr>
-    </thead>
-      <tbody>
-        <tr>
-          <td><p>See <a class="xref" href="alt-client.ICustomEntityMeta.html">ICustomEntityMeta</a></p>
-</td>
-        </tr>
-      </tbody>
-  </table>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-typeScript hljs">public getMeta&lt;V extends unknown&gt;(key: string): undefined | V</code></pre>
@@ -1149,8 +1087,7 @@ Disabling migration range will stop this process from happening until turned on 
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Gets a value using the specified key.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1170,8 +1107,7 @@ Disabling migration range will stop this process from happening until turned on 
         <td><span class="xref">Exclude&lt;K, never&gt;</span></td>
         <td><em>key</em></td>
         <td>
-          <p>The key of the value to get.</p>
-
+          
           
         </td>
       </tr>
@@ -1188,8 +1124,7 @@ Disabling migration range will stop this process from happening until turned on 
     <tbody>
       <tr>
         <td><span class="xref">unknown</span></td>
-        <td><p>Dynamic value associated with the specified key or undefined if no data is present.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1260,19 +1195,6 @@ Disabling migration range will stop this process from happening until turned on 
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th><span style="color: red; text-transform: uppercase;">Deprecated</span></th>
-      </tr>
-    </thead>
-      <tbody>
-        <tr>
-          <td><p>See &lt;xref:%22alt-shared%22.ICustomEntitySyncedMeta&gt;</p>
-</td>
-        </tr>
-      </tbody>
-  </table>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-typeScript hljs">public getSyncedMeta&lt;V extends unknown&gt;(key: string): undefined | V</code></pre>
@@ -1324,8 +1246,7 @@ Disabling migration range will stop this process from happening until turned on 
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Determines whether contains the specified key.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1345,8 +1266,7 @@ Disabling migration range will stop this process from happening until turned on 
         <td><span class="xref">string</span></td>
         <td><em>key</em></td>
         <td>
-          <p>The key of the value to locate.</p>
-
+          
           
         </td>
       </tr>
@@ -1363,8 +1283,7 @@ Disabling migration range will stop this process from happening until turned on 
     <tbody>
       <tr>
         <td><span class="xref">boolean</span></td>
-        <td><p>True if the meta table contains any data at the specified key or False if not</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1466,8 +1385,7 @@ Disabling migration range will stop this process from happening until turned on 
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Gets a value using the specified key.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1487,8 +1405,7 @@ Disabling migration range will stop this process from happening until turned on 
         <td><span class="xref">Exclude&lt;K, never&gt;</span></td>
         <td><em>key</em></td>
         <td>
-          <p>The key of the value to get.</p>
-
+          
           
         </td>
       </tr>
@@ -1505,8 +1422,7 @@ Disabling migration range will stop this process from happening until turned on 
     <tbody>
       <tr>
         <td><span class="xref">unknown</span></td>
-        <td><p>Dynamic value associated with the specified key or undefined if no data is present.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1577,19 +1493,6 @@ Disabling migration range will stop this process from happening until turned on 
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th><span style="color: red; text-transform: uppercase;">Deprecated</span></th>
-      </tr>
-    </thead>
-      <tbody>
-        <tr>
-          <td><p>See &lt;xref:%22alt-shared%22.ICustomEntityStreamSyncedMeta&gt;</p>
-</td>
-        </tr>
-      </tbody>
-  </table>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-typeScript hljs">public getStreamSyncedMeta&lt;V extends unknown&gt;(key: string): undefined | V</code></pre>
@@ -1641,8 +1544,7 @@ Disabling migration range will stop this process from happening until turned on 
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Determines whether contains the specified key.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1662,8 +1564,7 @@ Disabling migration range will stop this process from happening until turned on 
         <td><span class="xref">string</span></td>
         <td><em>key</em></td>
         <td>
-          <p>The key of the value to locate.</p>
-
+          
           
         </td>
       </tr>
@@ -1680,8 +1581,7 @@ Disabling migration range will stop this process from happening until turned on 
     <tbody>
       <tr>
         <td><span class="xref">boolean</span></td>
-        <td><p>True if the meta table contains any data at the specified key or False if not</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

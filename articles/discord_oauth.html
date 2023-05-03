@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#discord-oauth">Discord OAuth</a></li><li><a href="#step-by-step-tutorial">Step-by-Step tutorial</a><ul class="level2 nav bs-docs-sidenav step-by-step-tutorial"><li><a href="#preparation">Preparation</a></li><li><a href="#client-side-code">Client-side code</a></li><li><a href="#server-side-code">Server-side code</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#discord-oauth">Discord OAuth</a></li><li><a href="#一步步教程">一步步教程</a><ul class="level2 nav bs-docs-sidenav 一步步教程"><li><a href="#准备">准备</a></li><li><a href="#客户端代码">客户端代码</a></li><li><a href="#服务端代码">服务端代码</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -134,28 +134,27 @@
 
 <h1 id="discord-oauth">Discord OAuth</h1>
 
-<p>The Discord OAuth (Open Authorization) is used to identify a user by the usage of a Discord account.
-By using the built-in OAuth token request you'll receive a token which can be used to identify the user against the
-Discord api.</p>
+<p>Discord OAuth(开放授权)用于通过Discord帐户识别用户。<br>
+使用内置的OAuth令牌请求,您将接收一个令牌,可用于根据Discord API识别用户。</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>The returned data of the token validation can be found at the <a href="https://discord.com/developers/docs/resources/user#user-object">Discord api documentation</a>.</p>
+<p>令牌验证的返回数据可以在<a href="https://discord.com/developers/docs/resources/user#user-object">Discord API文档</a>中找到。</p>
 </div>
-<h1 id="step-by-step-tutorial">Step-by-Step tutorial</h1>
-<h2 id="preparation">Preparation</h2>
-<p>Before you can use the OAuth token you need to create a Discord application.
+<h1 id="一步步教程">一步步教程</h1>
+<h2 id="准备">准备</h2>
+<p>在使用OAuth令牌之前,您需要创建Discord应用程序。<br>
 <br>
-To create a new application you need to:</p>
+要创建新应用程序,您需要:</p>
 <ul>
-<li>Open the <a href="https://discord.com/developers/applications">Discord Developer Portal</a> and login with your discord account</li>
-<li>Click the &quot;New Application&quot; button on the top right</li>
-<li>Fill in your applications name and click on create</li>
-<li>Go to &quot;OAuth2&quot; and then &quot;General&quot;</li>
-<li>Click on &quot;Add Redirect&quot;, enter <code>http://127.0.0.1</code> and click &quot;Save Changes&quot; in the bottom bar</li>
-<li>Copy the &quot;CLIENT ID&quot; on the top - it will be needed for the next step</li>
+<li>打开<a href="https://discord.com/developers/applications">Discord 开发者门户</a>并使用Discord帐户登录</li>
+<li>单击右上角的&quot;新建应用程序&quot;按钮</li>
+<li>填写您的应用程序名称并单击创建</li>
+<li>转到&quot;OAuth2&quot;,然后转到&quot;常规&quot;</li>
+<li>单击&quot;添加重定向&quot;,输入 <code>http://127.0.0.1</code> 并单击底部工具栏中的&quot;保存更改&quot;</li>
+<li>复制顶部的&quot;客户端ID&quot; - 下一步需要它</li>
 </ul>
-<h2 id="client-side-code">Client-side code</h2>
-<pre><code class="lang-js">// Enter the client id here
+<h2 id="客户端代码">客户端代码</h2>
+<pre><code class="lang-js">// 在这里输入 client id
 const DISCORD_APP_ID = '1234567890';
 
 async function getOAuthToken() {
@@ -163,16 +162,16 @@ async function getOAuthToken() {
         const token = await alt.Discord.requestOAuth2Token(DISCORD_APP_ID);
         alt.emitServer('token', token);
     } catch (e) {
-        // Error can be due invalid app id, discord server issues or the user denying access.
+        // 错误可能是由于无效的应用程序id、不协调的服务器问题或用户拒绝访问。
         alt.logError(e);
     }
 }
 
 getOAuthToken();
 </code></pre>
-<h2 id="server-side-code">Server-side code</h2>
+<h2 id="服务端代码">服务端代码</h2>
 <pre><code class="lang-js">alt.onClient('token', async (player, token) =&gt; {
-    // Validate the token with a GET request to the Discord api
+    // 使用对Discord api的GET请求验证令牌
     const request = await axios
         .get('https://discordapp.com/api/users/@me', {
             'headers': {
@@ -184,13 +183,13 @@ getOAuthToken();
             return null;
         });
 
-    // Check if the request was successful and if the neccessary properties are included
+    // 检查请求是否成功，以及是否包括必要的属性
     if (!request || !request.data || !request.data.id || !request.data.username) {
         player.kick('Authorization failed');
         return;
     }
 
-    // Example of returned properties
+    // 返回属性示例
     alt.log(`Id: ${request.data.id}`);
     alt.log(`Name: ${request.data.username}#${request.data.discriminator}`);
 });
