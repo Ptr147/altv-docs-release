@@ -55406,6 +55406,33 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/audio.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/audio.html",
+          "hash": "W40xXxxzQHtgOyGcpaNh8vNBS5xUR5C0Ee7Tc/QNr1U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/audio_filters.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/audio_filters.html",
+          "hash": "BEXV6fwsdmHFVIdkgwl9JlfQIIhRCc+5Efs/DEG7mlQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/auto_reconnect.md",
       "output": {
         ".html": {
@@ -55458,7 +55485,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cdn_links.html",
-          "hash": "SHiGV/TZKvLiZQtYrzyfPHG9J2A84soL2M8ai4T8nVw="
+          "hash": "MeoD9t1xRuD7FBsw8GwB5CIuStrV+uVJ1MqAgbVkMnU="
         }
       },
       "is_incremental": false,
@@ -55518,7 +55545,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/changelogs/13_0.html",
-          "hash": "r5L1BnyzFCwRLugf+bXG5K3dGKNRyLwlfEdT1BNnomc="
+          "hash": "A//s1WctQu5qnaXH6yLOT03cYr2NuKOOemTQ7ZL62GQ="
         }
       },
       "is_incremental": false,
@@ -55614,7 +55641,31 @@
       "output": {
         ".html": {
           "relative_path": "articles/changelogs/upcoming.html",
-          "hash": "Guth8EbXKsjGS0Ddto4PfMMTRzcYERt7vVuujxEC08c="
+          "hash": "DkRlwFROIpYCRwcEVTYHs4q98cnuf2r/zTRulqGNMa0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/checkpoint.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/checkpoint.html",
+          "hash": "1FoNsbGxLA30YzhbMM05bFc2fcM7QkWlUKZG/MAJyog="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cloud_auth.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cloud_auth.html",
+          "hash": "3ukpbTvGNgHpuF+5mVL3n45kI6NBa6P96U5UOIs0SDo="
         }
       },
       "is_incremental": false,
@@ -55674,7 +55725,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/configs/server.html",
-          "hash": "Nh1leQszGBbBbpJWV9IHrZZXfo/QwZJXK0ogbeu2o84="
+          "hash": "tAqf3sDoE/p76pc83cHxKd/rPWlI62pR3xpHcQJlspA="
         }
       },
       "is_incremental": false,
@@ -55710,7 +55761,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/connectprotocol.html",
-          "hash": "R/aSTfuEuupB3+hjcOOod17aLr7NxIFpI/4UCr4aYvA="
+          "hash": "+qSr756q9BtUYsxFpGKzlzkNTYMtTlXEFiGw28aFuso="
         }
       },
       "is_incremental": false,
@@ -55794,7 +55845,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/external_voice_server.html",
-          "hash": "EOQRHuf0KD/8on3cJZ/lWdjjd/PHPM3H5zBqCy5tdhQ="
+          "hash": "n499VQxTnWKcsjZM+IGu42S5J1CpMYUex4+La1Rx+XY="
         }
       },
       "is_incremental": false,
@@ -55838,6 +55889,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/marker.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/marker.html",
+          "hash": "q/su2/aU3kKW67pDf5L+zrTQyiG/c9b8nZAEx0wd8Rc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/master_list_api.md",
       "output": {
         ".html": {
@@ -55862,6 +55925,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/object.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/object.html",
+          "hash": "cvGI8PZrRdSuU5Odif4M57wGX4jJSp3YhvT3N9dliXw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ped.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ped.html",
+          "hash": "U2SFs9OuNdJCo5vNzKr+jrK0azHop3T8V3G6ofGn+Zw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/permissions.md",
       "output": {
         ".html": {
@@ -55878,7 +55965,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/resources.html",
-          "hash": "V66NVJbDNq9kRYlE8I/LCSNKUtbeLxSx2eMpkfexNyM="
+          "hash": "PokvLPM0TnEGaVMHPmGYXzGn7HCzYBB0NSHGeaJaWkI="
         }
       },
       "is_incremental": false,
@@ -55982,6 +56069,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/textlabel.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/textlabel.html",
+          "hash": "dXiYybNicOwus6iYN9O3SIJhO+wkt4KpvtEw3jyhoaM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/troubleshooting/client.md",
       "output": {
         ".html": {
@@ -55999,6 +56098,30 @@
         ".html": {
           "relative_path": "articles/troubleshooting/server.html",
           "hash": "S2T0Wev9FGFCbp9mJwyh0ffWITQnqyaidjuZbQnxTrg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/virtualentity.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/virtualentity.html",
+          "hash": "cd9bZMz6BbA9/uTyfs8s04GCbgMYZ6vB+c7l0VnLRis="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/voice.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/voice.html",
+          "hash": "NezsMwDvTkQrCr5PjlyhLMrF/5TRb+MkapN1tzUlG10="
         }
       },
       "is_incremental": false,
@@ -68295,7 +68418,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "S3jblyuSxyZmeLtQd+OuFSP0KkXe9mzzCaL6XlitAMo="
+          "hash": "dgqWOFBZUhp9s5ekMICBZPBbrU6XQONWyI6JeqyiCBU="
         }
       },
       "is_incremental": false,

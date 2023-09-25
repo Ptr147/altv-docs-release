@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CDN&#20851;&#38381; </title>
+    <title> </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="CDN&#20851;&#38381; ">
+    <meta name="title" content=" ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -110,7 +110,9 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#cdn关闭">CDN关闭</a></li><li><a href="#cdn开启">CDN开启</a></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix">
+                                <div></div>
+                              </div>
                             </div>
 
                             
@@ -135,12 +137,18 @@
 
 <p>#直接连接协议</p>
 <p>此协议可用于通过浏览器连接到alt:V服务器。</p>
-<h2 id="cdn关闭">CDN关闭</h2>
-<p>如果您的服务器不使用cdn功能,您需要使用服务器的IP地址和端口。</p>
-<p><code>altv://connect/${IP_ADDRESS}:${PORT}?password=${PASSWORD}</code> 或者例如<code>altv://connect/127.0.0.1:7788?password=xyz</code></p>
-<h2 id="cdn开启">CDN开启</h2>
-<p>如果您正在使用cdn功能,您需要使用cdn的直接连接URL。</p>
-<p><code>altv://connect/http://{CDN_URL}?password=${PASSWORD}</code> 或者例如<code>altv://connect/http://connect.example.com?password=xyz</code></p>
+<p>协议格式:</p>
+<p><code>altv://connect/ADDRESS?password=PASSWORD</code> 或 <code>altv://connect/ADDRESS</code></p>
+<ul>
+<li>ADDRESS is <a href="https://www.urlencoder.org/">urlencoded</a> connection address, exactly like used in &quot;Direct connect&quot; window</li>
+<li>PASSWORD (optional) is <a href="https://www.urlencoder.org/">urlencoded</a> password</li>
+</ul>
+<p>案例:</p>
+<ul>
+<li><code>my.cdn.server:80</code> -&gt; <code>altv://connect/my.cdn.server%3A80</code></li>
+<li><code>http://my.cdn.server</code> -&gt; <code>altv://connect/http%3A%2F%2Fmy.cdn.server</code></li>
+<li><code>[::1]:1234</code> with password <code>test</code> -&gt; <code>altv://connect/%5B%3A%3A1%5D%3A1234?password=test</code></li>
+</ul>
 </article>
                     </div>
 

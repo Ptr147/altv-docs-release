@@ -156,7 +156,8 @@ secret = 1234567890
 <p>现在您只需启动语音服务器并继续集成 alt:V 服务器。</p>
 <h2 id="集成外部语音服务器">集成外部语音服务器</h2>
 <p>要集成 alt:V 服务器,只需对 server.toml 进行少量调整:</p>
-<pre><code class="lang-toml">[voice]  
+<pre><code class="lang-toml">[voice]
+streamingTickRate = 10
 # 语音服务器的比特率  
 bitrate = 64000  
 # 外部服务器的密钥(仅在使用externalHost时需要)  
@@ -170,6 +171,13 @@ externalPort = 7798
 externalPublicHost = &quot;xx.xx.xx.xx&quot;  
 # 外部主机公共端口  
 externalPublicPort = 7799
+
+# Define the map bound size
+mapBoundsMinX = -10000
+mapBoundsMinY = -10000
+mapBoundsMaxX = 65536
+mapBoundsMaxY = 65536
+mapCellAreaSize = 100 #smaller areas uses more ram and less cpu
 </code></pre>
 </article>
                     </div>
