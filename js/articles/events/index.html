@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Events </title>
+    <title>&#20107;&#20214; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Events ">
+    <meta name="title" content="&#20107;&#20214; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#events">Events</a><ul class="level2 nav bs-docs-sidenav events"><li><a href="#server-to-client">Server to client</a></li><li><a href="#client-to-server">Client to server</a></li><li><a href="#server-resource-to-server-resource">Server resource to server resource</a></li><li><a href="#client-resource-to-client-resource">Client resource to client resource</a></li><li><a href="#client-to-webview-and-back">Client to WebView and back</a></li><li><a href="#unsubscribes-from-events">Unsubscribes from events</a></li><li><a href="#raw-events">Raw Events</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#事件">事件</a><ul class="level2 nav bs-docs-sidenav 事件"><li><a href="#从服务器到客户端">从服务器到客户端</a></li><li><a href="#从客户端到服务器">从客户端到服务器</a></li><li><a href="#从服务器资源到另一个服务器资源">从服务器资源到另一个服务器资源</a></li><li><a href="#从客户端资源到另一个客户端资源">从客户端资源到另一个客户端资源</a></li><li><a href="#client-to-webview-and-back">Client to WebView and back</a></li><li><a href="#取消订阅事件">取消订阅事件</a></li><li><a href="#原始事件">原始事件</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,77 +132,77 @@
                                     </ul>
                                 </span>
 
-<h1 id="events">Events</h1>
+<h1 id="事件">事件</h1>
 
-<p>Events work in a very specific way and understanding their communication is very important.</p>
-<p>The server can communicate with any client.
-Clients may only communicate with WebViews and the server.</p>
-<p>A client <strong>CANNOT</strong> communicate with another client.</p>
+<p>事件以非常特定的方式工作，了解它们的通信方式非常重要。</p>
+<p>服务器可以与任何客户端通信。
+客户端只能与WebViews和服务器通信。</p>
+<p>客户端<strong>不能</strong>与另一个客户端通信。</p>
 <table>
 <thead>
 <tr>
-<th>Function Name</th>
-<th>Description</th>
+<th>方法名</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>alt.emit</td>
-<td>Emit an event on server or client side. Only received on the side it was emitted from.</td>
+<td>在服务器端或客户端发出一个事件，只能在发出方接收到。</td>
 </tr>
 <tr>
 <td>alt.on</td>
-<td>Receives an event. Server only receives server events. Client only receives client events.</td>
+<td>接收事件。Server只接收服务器事件。Client只接收Client事件。</td>
 </tr>
 <tr>
 <td>alt.off</td>
-<td>Stop listening to custom or built-in events.</td>
+<td>停止监听自定义或内置事件。</td>
 </tr>
 <tr>
 <td>alt.onServer</td>
-<td>Receives an event emitted from the server on client-side. Triggered with <code>alt.emitClient</code>.</td>
+<td>在客户端接收服务器发出的事件。通过<code>alt.emitClient</code>触发。</td>
 </tr>
 <tr>
 <td>alt.offServer</td>
-<td>Stop listening to custom events from the server.</td>
+<td>停止监听来自服务器的自定义事件。</td>
 </tr>
 <tr>
 <td>alt.emitClient</td>
-<td>Emit an event to a specific client or an array of clients that they receive with <code>alt.onServer</code>.</td>
+<td>通过<code>alt.onServer</code>向特定的客户端或一组客户端发送事件。</td>
 </tr>
 <tr>
 <td>alt.emitClientRaw</td>
-<td>Emit an event to a specific client or an array of clients. It works faster than <code>emitAllClients</code> that they receive with <code>alt.onServer</code>.</td>
+<td>向指定的客户端或客户端数组发送事件。它比<code>alt.onServer</code>接收的<code>emitAllClients</code>工作得更快。</td>
 </tr>
 <tr>
 <td>alt.emitAllClients</td>
-<td>Emit an event to all clients that they receive with <code>alt.onServer</code>.</td>
+<td>通过<code>alt.onServer</code>向所有接收到的客户端发送一个事件。</td>
 </tr>
 <tr>
 <td>alt.emitAllClientsRaw</td>
-<td>Emit an event to all clients. It works faster than <code>emitAllClients</code> that they receive with <code>alt.onServer</code>.</td>
+<td>向所有客户端发送事件。它比<code>alt.onServer</code>接收的<code>emitAllClients</code>工作得更快。</td>
 </tr>
 <tr>
 <td>alt.onClient</td>
-<td>Receives an event emitted from the client on server-side. Triggered with <code>alt.emitServer</code>.</td>
+<td>在服务器端接收客户端发出的事件。通过<code>alt.emitServer</code>触发。</td>
 </tr>
 <tr>
 <td>alt.offClient</td>
-<td>Stop listening to custom events from the client.</td>
+<td>停止监听来自客户端的自定义事件。</td>
 </tr>
 <tr>
 <td>alt.emitServer</td>
-<td>Emit an event to the server that is received with <code>alt.onClient</code>.</td>
+<td>通过<code>alt.onClient</code>向服务器发送一个事件。</td>
 </tr>
 <tr>
 <td>alt.emitServerRaw</td>
-<td>(only works, server is using javascript)  Emit an event to the server. It works faster than <code>emitServer</code> that they receive with <code>alt.onClient</code></td>
+<td>(只能正常工作，服务器正在使用javascript)向服务器发送事件。它比<code>alt.onClient</code>接收的<code>emitServer</code>更快</td>
 </tr>
 </tbody>
 </table>
-<h2 id="server-to-client">Server to client</h2>
-<p>The server may only emit data to the client-side with <code>emitClient</code> or <code>emitClientRaw</code>, which requires a Player.</p>
-<p><code>emitClientRaw</code> and <code>emitAllClientsRaw</code> are used for big data and are faster than <code>emitClient</code> or <code>emitAllClients</code>.</p>
+<h2 id="从服务器到客户端">从服务器到客户端</h2>
+<p>服务器只能通过<code>emitClient</code>或<code>emitClientRaw</code>向客户端发送数据，这需要一个玩家。</p>
+<p><code>emitClientRaw</code>和<code>emitAllClientsRaw</code>用于大数据，比<code>emitClient</code>或<code>emitAllClients</code>更快。</p>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S">
 <ul role="tablist">
 <li role="presentation">
@@ -222,18 +222,18 @@ Clients may only communicate with WebViews and the server.</p>
 <section id="tabpanel_bHGHmlrG6S_tab1-1" role="tabpanel" data-tab="tab1-1" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-js">alt.on('playerConnect', player =&gt; {
-    alt.emitClient(player, 'sayHello'); // Send an event to a specific player
+    alt.emitClient(player, 'sayHello'); // 向特定的玩家发送事件
 
-    // Send an event to all players
+    // 向所有玩家发送事件
     alt.emitAllClients('sayHello');
 });
 </code></pre>
 </section>
 </div>
-<h2 id="client-to-server">Client to server</h2>
-<p>The client may only emit data to the server-side with <code>emitServer</code> or <code>emitServerRaw</code>.
-<code>emitServerRaw</code> is used for big data and is faster than <code>emitServer</code> and <code>emitServerRaw</code> only works, if the server is using javascript.</p>
-<p>The server-side <code>onServer</code> event handlers will automatically receive the player that sent the event as the first argument.</p>
+<h2 id="从客户端到服务器">从客户端到服务器</h2>
+<p>客户端只能通过<code>emitServer</code>或<code>emitServerRaw</code>将数据发送到服务器端。
+<code>emitServerRaw</code>用于处理大数据，比<code>emitServer</code>更快，并且只有在服务器使用javascript时，<code>emitServerRaw</code>才有效。</p>
+<p>服务器端<code>onServer</code>事件处理程序将自动接收发送事件的播放器作为第一个参数。</p>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
 <ul role="tablist">
 <li role="presentation">
@@ -258,9 +258,9 @@ Clients may only communicate with WebViews and the server.</p>
 </code></pre>
 </section>
 </div>
-<h2 id="server-resource-to-server-resource">Server resource to server resource</h2>
-<p>The server &amp; client may only communicate with itself with the <code>on</code> and <code>emit</code> functions.
-They are sent and received across resources as well.</p>
+<h2 id="从服务器资源到另一个服务器资源">从服务器资源到另一个服务器资源</h2>
+<p>服务器和客户端只能通过<code>on</code>和<code>emit</code>函数与自己通信。
+它们也是跨资源发送和接收的。</p>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S-2">
 <ul role="tablist">
 <li role="presentation">
@@ -277,7 +277,7 @@ alt.on('hello', msg =&gt; {
 </code></pre>
 </section>
 </div>
-<h2 id="client-resource-to-client-resource">Client resource to client resource</h2>
+<h2 id="从客户端资源到另一个客户端资源">从客户端资源到另一个客户端资源</h2>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S-3">
 <ul role="tablist">
 <li role="presentation">
@@ -295,7 +295,7 @@ alt.on('hello', msg =&gt; {
 </section>
 </div>
 <h2 id="client-to-webview-and-back">Client to WebView and back</h2>
-<p><strong>Note:</strong> <code>resource</code> in the URL of the WebView refers to the resource that you are currently writing code for.</p>
+<p><strong>Note:</strong> <code>resource</code> 在WebView的URL中引用您正在为之编写代码的资源。</p>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S-4">
 <ul role="tablist">
 <li role="presentation">
@@ -340,7 +340,7 @@ alt.setTimeout(() =&gt; {
 </code></pre>
 </section>
 </div>
-<h2 id="unsubscribes-from-events">Unsubscribes from events</h2>
+<h2 id="取消订阅事件">取消订阅事件</h2>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S-5">
 <ul role="tablist">
 <li role="presentation">
@@ -378,12 +378,12 @@ function customEventFunction() {
 </code></pre>
 </section>
 </div>
-<h2 id="raw-events">Raw Events</h2>
-<p>Raw events serialize the values to their raw byte buffer representation instead of converting them to an intermediate value, because of this the raw events can serialize and send big objects / arrays a lot faster than the normal events, BUT the downside is that this only works when both sides are using JavaScript.</p>
-<p>Think of them as &quot;native&quot; JavaScript events, they can send almost any JS built-in data structure, such as <code>Set</code>, <code>Map</code>, <code>Date</code>, etc. and without limits (for example, BigInt of any size).</p>
+<h2 id="原始事件">原始事件</h2>
+<p>原始事件将值序列化为原始字节缓冲区表示，而不是将它们转换为中间值，因此原始事件可以比普通事件更快地序列化和发送大对象/数组，但缺点是这仅在双方都使用JavaScript时有效。</p>
+<p>可以把它们看作是“原生”的JavaScript事件，它们可以发送几乎任何JS内置的数据结构，例如<code>Set</code>， <code>Map</code>， <code>Date</code>等，并且没有限制(例如，任何大小的BigInt)。</p>
 <div class="CAUTION">
 <h5>Caution</h5>
-<p><code>alt.emitServerRaw</code> only works if the server is using javascript.</p>
+<p><code>alt.emitServerRaw</code> 仅当服务器使用javascript时有效。</p>
 </div>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S-6">
 <ul role="tablist">
@@ -407,9 +407,9 @@ function customEventFunction() {
         { id: 0, name: &quot;test1&quot; },
         { id: 1, name: &quot;test2&quot; }
     ]
-    alt.emitClientRaw(player, 'sayHello', array); // Send an event to a specific player
+    alt.emitClientRaw(player, 'sayHello', array); // 向特定的玩家发送事件
 
-    // Send an event to all players
+    // 向所有玩家发送事件
     alt.emitAllClientsRaw('sayHello', array);
 });
 </code></pre>

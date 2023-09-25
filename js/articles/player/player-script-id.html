@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Understanding ScriptID </title>
+    <title>&#29702;&#35299; ScriptID </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Understanding ScriptID ">
+    <meta name="title" content="&#29702;&#35299; ScriptID ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#understanding-scriptid">Understanding ScriptID</a><ul class="level2 nav bs-docs-sidenav understanding-scriptid"><li><a href="#how-to-obtain-it">How to obtain it.</a><ul class="level3 nav bs-docs-sidenav how-to-obtain-it"><li><a href="#server-side">Server Side</a></li><li><a href="#client-side">Client Side</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#理解-scriptid">理解 ScriptID</a><ul class="level2 nav bs-docs-sidenav 理解-scriptid"><li><a href="#如何获取">如何获取</a><ul class="level3 nav bs-docs-sidenav 如何获取"><li><a href="#server-side">Server Side</a></li><li><a href="#client-side">Client Side</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,35 +132,35 @@
                                     </ul>
                                 </span>
 
-<h1 id="understanding-scriptid">Understanding ScriptID</h1>
+<h1 id="理解-scriptid">理解 ScriptID</h1>
 
-<p>This is a way for us to identify another player or ourselves on <strong>client-side</strong>.</p>
-<p>A General Overview</p>
+<p>这是我们在<strong>客户端</strong>识别其他玩家或自己的一种方式。</p>
+<p>概述</p>
 <ul>
-<li>A scriptID is unique to only the client side.</li>
-<li>scriptID will provide us a way to modify the native behavior of a player.
+<li>scriptID仅对客户端是唯一的。</li>
+<li>scriptID将为我们提供一种修改玩家原生行为的方法。
 <ul>
-<li>The usage of the player instance is preferred to the usage of the scriptID.</li>
+<li>使用player实例优先于使用scriptID。</li>
 </ul>
 </li>
-<li>They are most often used in tandem with natives.</li>
-<li>They are unique per client per player.
+<li>他们通常与当地人一起natives。</li>
+<li>它们对于每个客户和每个玩家都是独一无二的。
 <ul>
-<li>Do not try to share scriptID with another player. It will not work.</li>
+<li>不要尝试与其他玩家共享scriptID。这是行不通的。</li>
 </ul>
 </li>
 </ul>
-<h2 id="how-to-obtain-it">How to obtain it.</h2>
-<p>Your scriptID for your player can be retrieved in this way.</p>
+<h2 id="如何获取">如何获取</h2>
+<p>可以通过这种方式获取玩家的scriptID。</p>
 <pre><code class="lang-js">alt.Player.local.scriptID;
 </code></pre>
-<p>This is the equivalent of <code>local playerPed = PlayerPedId()</code> from FiveM.</p>
-<p>However, for individual players it depends on how you receive their player instance.</p>
+<p>这相当于FiveM中的<code>local playerPed = PlayerPedId()</code>。</p>
+<p>然而，对于单个玩家来说，这取决于你如何接收他们的玩家实例。</p>
 <h3 id="server-side">Server Side</h3>
 <pre><code class="lang-js">import * as alt from 'alt-server';
 
 alt.on('playerConnect', player =&gt; {
-    // Send 'joined' event with a player instance to all players 
+    // 向所有玩家发送带有player实例的` joined `事件
     alt.emitAllClients('joined', player);
 });
 </code></pre>
@@ -169,23 +169,23 @@ alt.on('playerConnect', player =&gt; {
 import * as native from 'natives';
 
 alt.onServer('joined', otherPlayer =&gt; {
-    // Check if otherPlayer is our local player
+    // 检查otherPlayer是否为本地玩家
     if (otherPlayer === alt.Player.local) {
-        // Let's freeze ourself.
-        // Don't actually do this. This is just how most natives work with scriptID.
+        // 让我们冻结自己。
+        // 不要真的这么做。这就是大多数当地人使用scriptID的方式。
         alt.log(`You have frozen.`);
         native.freezeEntityPosition(alt.Player.local.scriptID, true);
 
-        // We'll unfreeze ourself in 5 seconds.
+        // 我们会在五秒钟内解冻自己。
         alt.setTimeout(() =&gt; {
             alt.log(`You are unfrozen.`);
-            // You can preferably use the player instance itself, this will include some internal checks
+            // 你可以使用player实例本身，这将包括一些内部检查
             native.freezeEntityPosition(alt.Player.local, false);
         }, 5000);
         return;
     }
 
-    // Log their scriptID to the 'F8' console.
+    // 将scriptID打印到` F8 `控制台。
     alt.log(`Their scriptID is: ${otherPlayer.scriptID}`);
 });
 </code></pre>

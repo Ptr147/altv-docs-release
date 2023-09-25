@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Train API </title>
+    <title>&#21015;&#36710; API </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Train API ">
+    <meta name="title" content="&#21015;&#36710; API ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#train-api">Train API</a><ul class="level2 nav bs-docs-sidenav train-api"><li><a href="#properties">Properties</a></li><li><a href="#methods">Methods</a></li><li><a href="#example-code">Example Code</a><ul class="level3 nav bs-docs-sidenav example-code"><li><a href="#single-train">Single train</a></li><li><a href="#linked-trains">Linked trains</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#列车-api">列车 API</a><ul class="level2 nav bs-docs-sidenav 列车-api"><li><a href="#属性">属性</a></li><li><a href="#methods">Methods</a></li><li><a href="#代码示例">代码示例</a><ul class="level3 nav bs-docs-sidenav 代码示例"><li><a href="#single-train">Single train</a></li><li><a href="#链接火车">链接火车</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,109 +132,109 @@
                                     </ul>
                                 </span>
 
-<h1 id="train-api">Train API</h1>
+<h1 id="列车-api">列车 API</h1>
 
-<p>The Train API has been introduced in version 7.0 and provides properties and methods to control trains. It is part of the serverside vehicle class and synchronized. This article should give you an overview of the API and how to use it.</p>
-<h2 id="properties">Properties</h2>
+<p>7.0版本引入了Train API，提供了属性和方法来控制列车。它是服务器端vehicle类的一部分，并且是同步的。本文将为您概述该API以及如何使用它。</p>
+<h2 id="属性">属性</h2>
 <table>
 <thead>
 <tr>
-<th>Property Name</th>
-<th>Description</th>
+<th>属性名</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>isMissionTrain</td>
-<td>Gets or sets if the created train is a mission train.</td>
+<td>获取或设置创建的列车是否是任务列车。</td>
 </tr>
 <tr>
 <td>trainTrackId</td>
-<td>Gets or sets the track id of the train. [Valid track ids: 0 - 11]</td>
+<td>获取或设置列车的轨道id。[有效id: 0 - 11]</td>
 </tr>
 <tr>
 <td>trainEngineId</td>
-<td>Gets the engine of the train.</td>
+<td>获取火车的引擎。</td>
 </tr>
 <tr>
 <td>trainConfigIndex</td>
-<td>Gets or sets the trains config index. You can find a list of all possible config indices in the trains.xml. [Valid indices: 1 - 25]</td>
+<td>获取或设置火车的配置索引。你可以在trains.xml中找到所有可能的配置索引列表。</td>
 </tr>
 <tr>
 <td>trainDistanceFromEngine</td>
-<td>Gets or sets the distance of the trains to the engine.</td>
+<td>获取或设置火车与引擎之间的距离。</td>
 </tr>
 <tr>
 <td>isTrainEngine</td>
-<td>Gets or sets if the train is the engine of the train.</td>
+<td>获取或设置火车是否是列车的引擎。</td>
 </tr>
 <tr>
 <td>isTrainCaboose</td>
-<td>Gets or sets if the train is a caboose.</td>
+<td>如果火车是车尾，获取或设置。</td>
 </tr>
 <tr>
 <td>trainDirection</td>
-<td>Gets or sets the direction of the train. (<code>true</code> means forward, <code>false</code> means backward)</td>
+<td>获取或设置列车的方向。(<code>true</code>表示向前，<code>false</code>表示向后)</td>
 </tr>
 <tr>
 <td>trainPassengerCarriages</td>
-<td>Gets or sets if the train is a passenger carriage.</td>
+<td>获取或设置(如果列车是客运车厢)。</td>
 </tr>
 <tr>
 <td>trainRenderDerailed</td>
-<td>Gets or sets if the trains is rendered derailed.</td>
+<td>获取或设置(如果火车被渲染脱轨)。</td>
 </tr>
 <tr>
 <td>trainForceDoorsOpen</td>
-<td>Gets or sets if the doors of the trains should be forced open.</td>
+<td>获取或设置是否应该强行打开列车门。</td>
 </tr>
 <tr>
 <td>trainCruiseSpeed</td>
-<td>Gets or sets the cruise speed of the train.</td>
+<td>获取或设置火车巡航速度。</td>
 </tr>
 <tr>
 <td>trainCarriageConfigIndex</td>
-<td>Gets or sets the config index of the train's carriage.</td>
+<td>获取或设置列车车厢的配置索引。</td>
 </tr>
 <tr>
 <td>trainLinkedToBackwardId</td>
-<td>Gets or sets another train that is linked to the back of the train.</td>
+<td>获取或设置另一列与列车尾部相连的列车。</td>
 </tr>
 <tr>
 <td>trainLinkedToForwardId</td>
-<td>Gets or sets another train that is linked to the front of the train.</td>
+<td>获取或设置与列车前端相连的另一列列车。</td>
 </tr>
 </tbody>
 </table>
 <h2 id="methods">Methods</h2>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>Please keep in mind that these methods will only work when they are used right on spawn.</p>
+<p>请记住，这些方法只有在刷出时才有效。</p>
 </div>
 <table>
 <thead>
 <tr>
-<th>Method Name</th>
-<th>Description</th>
+<th>方法名</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>setTrainEngineId</td>
-<td>Applying a train as an engine of a train.</td>
+<td>把火车用作火车的引擎。</td>
 </tr>
 <tr>
 <td>setTrainLinkedToBackwardId</td>
-<td>Links another train to the back of the train.</td>
+<td>把另一列火车连接到火车的尾部。</td>
 </tr>
 <tr>
 <td>setTrainLinkedToForwardId</td>
-<td>Links another train to the front of the train.</td>
+<td>将另一列火车连接到列车的前部。</td>
 </tr>
 </tbody>
 </table>
-<h2 id="example-code">Example Code</h2>
-<p>The following code creates the metrotrain that drives on track 1. The track goes from the city to Paleto Bay and back.</p>
+<h2 id="代码示例">代码示例</h2>
+<p>下面的代码创建在轨道1上行驶的地铁列车。这条轨道从城市到帕莱托湾，然后返回。</p>
 <h3 id="single-train">Single train</h3>
 <pre><code class="lang-js">let vehicle = new alt.Vehicle(alt.hash(&quot;metrotrain&quot;), 0, 0, 0, 0, 0, 0);
 vehicle.isMissionTrain = false;
@@ -253,9 +253,9 @@ vehicle.trainCarriageConfigIndex = 0;
 vehicle.setTrainLinkedToBackwardId(null);
 vehicle.setTrainLinkedToForwardId(null);
 </code></pre>
-<h3 id="linked-trains">Linked trains</h3>
-<p>In order to link two trains to each other you need to use the <code>setTrainLinkedToBackwardId</code> and<code>setTrainLinkedToForwardId</code> methods. It is also important that one of the trains needs to be the engine of the train and the other one needs to be the carriage. Otherwise, you need to set the distance of the second train via<code>trainDistanceFromVehicle</code> manually.</p>
-<pre><code class="lang-js">  // The whole train drives on track 3 and starts at the node index 1 of track 3.
+<h3 id="链接火车">链接火车</h3>
+<p>为了将两列火车连接起来，你需要使用<code>setTrainLinkedToBackwardId</code>和<code>settrainlinkedtoforwardid</code>方法。同样重要的是，一列火车需要成为火车的引擎，另一列火车需要成为车厢。否则，你需要手动通过<code>traindistancefromvehicle</code>设置第二辆火车的距离。</p>
+<pre><code class="lang-js">  // 整列火车在轨道3上行驶，从轨道3的节点索引1开始。
   
   let vehicle = new alt.Vehicle(alt.hash(&quot;metrotrain&quot;), 193, -603, 16, 0, 0, 0);
   vehicle.isMissionTrain = false;
@@ -263,10 +263,10 @@ vehicle.setTrainLinkedToForwardId(null);
   vehicle.setTrainEngineId(null);
   vehicle.trainConfigIndex = 25;
   vehicle.trainDistanceFromEngine = 0;
-  vehicle.isTrainEngine = true; // Make this train the engine of the whole train
+  vehicle.isTrainEngine = true; // 让这列火车成为整列火车的引擎
   vehicle.isTrainCaboose = false;
   vehicle.trainDirection = false;
-  vehicle.trainPassengerCarriages = false; // Disable this train as a passenger carriage
+  vehicle.trainPassengerCarriages = false; // 使这列火车成为乘客车厢
   vehicle.trainRenderDerailed = false;
   vehicle.trainForceDoorsOpen = false;
   vehicle.trainCarriageConfigIndex = 1;
@@ -278,17 +278,17 @@ vehicle.setTrainLinkedToForwardId(null);
   vehicle2.setTrainEngineId(vehicle);
   vehicle2.trainConfigIndex = 25;
   vehicle2.trainDistanceFromEngine = 0;
-  vehicle2.isTrainEngine = false; // Disable this train as the engine of the whole train
+  vehicle2.isTrainEngine = false; // 关闭这列火车作为整列火车的引擎
   vehicle2.isTrainCaboose = false;
   vehicle2.trainDirection = false;
-  vehicle2.trainPassengerCarriages = true; // Make this train as a passenger carriage
+  vehicle2.trainPassengerCarriages = true; // 把这列火车当作乘客车厢
   vehicle2.trainRenderDerailed = false;
   vehicle2.trainForceDoorsOpen = false;
   vehicle2.trainCarriageConfigIndex = 1;
   
-  vehicle2.setTrainLinkedToBackwardId(null); // Link no train to the back of this vehicle2
-  vehicle2.setTrainLinkedToForwardId(vehicle); // Link vehicle to the front of the vehicle
-  vehicle.setTrainLinkedToBackwardId(vehicle2); // Link vehicle2 to the back of the vehicle
+  vehicle2.setTrainLinkedToBackwardId(null); // 不要把火车连接到这辆车的后面
+  vehicle2.setTrainLinkedToForwardId(vehicle); // 将车辆连接到车辆的前部
+  vehicle.setTrainLinkedToBackwardId(vehicle2); // 将车辆2连接到车辆的后部
 
 </code></pre>
 </article>

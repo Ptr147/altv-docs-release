@@ -6,10 +6,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface INetworkObject
+    <title>Interface IAudioOutput
    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Interface INetworkObject
+    <meta name="title" content="Interface IAudioOutput
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Elements_Entities_INetworkObject_Alpha">Alpha</a></li><li><a href="#AltV_Net_Elements_Entities_INetworkObject_LodDistance">LodDistance</a></li><li><a href="#AltV_Net_Elements_Entities_INetworkObject_NetworkObjectNativePointer">NetworkObjectNativePointer</a></li><li><a href="#AltV_Net_Elements_Entities_INetworkObject_TextureVariation">TextureVariation</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Elements_Entities_INetworkObject_ActivatePhysics">ActivatePhysics()</a></li><li><a href="#AltV_Net_Elements_Entities_INetworkObject_PlaceOnGroundProperly">PlaceOnGroundProperly()</a></li></ul></li><li><a href="#extensionmethods">Extension Methods</a></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Client_Elements_Interfaces_IAudioOutput_AudioOutputNativePointer">AudioOutputNativePointer</a></li><li><a href="#AltV_Net_Client_Elements_Interfaces_IAudioOutput_Category">Category</a></li><li><a href="#AltV_Net_Client_Elements_Interfaces_IAudioOutput_Filter">Filter</a></li><li><a href="#AltV_Net_Client_Elements_Interfaces_IAudioOutput_IsMuted">IsMuted</a></li><li><a href="#AltV_Net_Client_Elements_Interfaces_IAudioOutput_Owner">Owner</a></li><li><a href="#AltV_Net_Client_Elements_Interfaces_IAudioOutput_Volume">Volume</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Client_Elements_Interfaces_IAudioOutput_AddFilter_AltV_Net_Client_Elements_Interfaces_IAudioFilter_">AddFilter(IAudioFilter)</a></li><li><a href="#AltV_Net_Client_Elements_Interfaces_IAudioOutput_RemoveFilter">RemoveFilter()</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -124,122 +124,41 @@
                               <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
                             </div>
 
-                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Elements.Entities.INetworkObject">
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput">
 
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/a89a58fa80f568652d173c26d2f745d6c784e0c5/api/AltV.Net/Elements/Entities/ISharedObject.cs/#L5">View Source</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/ddefa4c966499dfb3902c0b729e89bb530beb3aa/api/AltV.Net.Client/Elements/Interfaces/IAudioOutput.cs/#L5">View Source</a>
                                             </li>
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_INetworkObject.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.INetworkObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Interfaces_IAudioOutput.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Interfaces.IAudioOutput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
   
   
-  <h1 id="AltV_Net_Elements_Entities_INetworkObject" data-uid="AltV.Net.Elements.Entities.INetworkObject" class="text-break">Interface INetworkObject
+  <h1 id="AltV_Net_Client_Elements_Interfaces_IAudioOutput" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput" class="text-break">Interface IAudioOutput
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_NetworkOwner">IEntity.NetworkOwner</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Interfaces.IBaseObject.html#AltV_Net_Client_Elements_Interfaces_IBaseObject_Core">IBaseObject.Core</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_Rotation">IEntity.Rotation</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Interfaces.IBaseObject.html#AltV_Net_Client_Elements_Interfaces_IBaseObject_Remove">IBaseObject.Remove()</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_Visible">IEntity.Visible</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Interfaces.IBaseObject.html#AltV_Net_Client_Elements_Interfaces_IBaseObject_Destroy">IBaseObject.Destroy()</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_Streamed">IEntity.Streamed</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Interfaces.IBaseObject.html#AltV_Net_Client_Elements_Interfaces_IBaseObject_RemoteId">IBaseObject.RemoteId</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_SetNetworkOwner_AltV_Net_Elements_Entities_IPlayer_System_Boolean_">IEntity.SetNetworkOwner(IPlayer, Boolean)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_ResetNetworkOwner">IEntity.ResetNetworkOwner()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_SetStreamSyncedMetaData_System_String_System_Object_">IEntity.SetStreamSyncedMetaData(String, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_SetStreamSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">IEntity.SetStreamSyncedMetaData(String, MValueConst)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_DeleteStreamSyncedMetaData_System_String_">IEntity.DeleteStreamSyncedMetaData(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_AttachToEntity_AltV_Net_Elements_Entities_IEntity_System_Int16_System_Int16_Position_Rotation_System_Boolean_System_Boolean_">IEntity.AttachToEntity(IEntity, Int16, Int16, Position, Rotation, Boolean, Boolean)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_AttachToEntity_AltV_Net_Elements_Entities_IEntity_System_String_System_String_Position_Rotation_System_Boolean_System_Boolean_">IEntity.AttachToEntity(IEntity, String, String, Position, Rotation, Boolean, Boolean)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_Collision">IEntity.Collision</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_Detach">IEntity.Detach()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html#AltV_Net_Elements_Entities_IEntity_Timestamp">IEntity.Timestamp</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedEntity.html#AltV_Net_Shared_Elements_Entities_ISharedEntity_EntityNativePointer">ISharedEntity.EntityNativePointer</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedEntity.html#AltV_Net_Shared_Elements_Entities_ISharedEntity_Id">ISharedEntity.Id</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedEntity.html#AltV_Net_Shared_Elements_Entities_ISharedEntity_Exists">ISharedEntity.Exists</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedEntity.html#AltV_Net_Shared_Elements_Entities_ISharedEntity_Model">ISharedEntity.Model</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedEntity.html#AltV_Net_Shared_Elements_Entities_ISharedEntity_HasStreamSyncedMetaData_System_String_">ISharedEntity.HasStreamSyncedMetaData(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedEntity.html#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_Int32__">ISharedEntity.GetStreamSyncedMetaData(String, Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedEntity.html#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_UInt32__">ISharedEntity.GetStreamSyncedMetaData(String, UInt32)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedEntity.html#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_Single__">ISharedEntity.GetStreamSyncedMetaData(String, Single)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedEntity.html#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">ISharedEntity.GetStreamSyncedMetaData(String, MValueConst)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedEntity.html#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData__1_System_String___0__">ISharedEntity.GetStreamSyncedMetaData&lt;T&gt;(String, T)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedEntity.html#AltV_Net_Shared_Elements_Entities_ISharedEntity_Frozen">ISharedEntity.Frozen</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IWorldObject.html#AltV_Net_Elements_Entities_IWorldObject_Position">IWorldObject.Position</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IWorldObject.html#AltV_Net_Elements_Entities_IWorldObject_Dimension">IWorldObject.Dimension</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedWorldObject.html#AltV_Net_Shared_Elements_Entities_ISharedWorldObject_WorldObjectNativePointer">ISharedWorldObject.WorldObjectNativePointer</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_Core">IBaseObject.Core</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_SetSyncedMetaData_System_String_System_Object_">IBaseObject.SetSyncedMetaData(String, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_SetSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">IBaseObject.SetSyncedMetaData(String, MValueConst)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_DeleteSyncedMetaData_System_String_">IBaseObject.DeleteSyncedMetaData(String)</a>
+      <a class="xref" href="AltV.Net.Client.Elements.Interfaces.IBaseObject.html#AltV_Net_Client_Elements_Interfaces_IBaseObject_IsRemote">IBaseObject.IsRemote</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_BaseObjectNativePointer">ISharedBaseObject.BaseObjectNativePointer</a>
@@ -252,6 +171,9 @@
     </div>
     <div>
       <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_SetMetaData_System_String_System_Object_">ISharedBaseObject.SetMetaData(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_SetMetaData_Dictionary_System_String_System_Object__">ISharedBaseObject.SetMetaData(Dictionary&lt;String, Object&gt;)</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_GetMetaData__1_System_String___0__">ISharedBaseObject.GetMetaData&lt;T&gt;(String, T)</a>
@@ -305,12 +227,6 @@
       <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_CheckIfEntityExistsOrCached">ISharedBaseObject.CheckIfEntityExistsOrCached()</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_Remove">ISharedBaseObject.Remove()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_Destroy">ISharedBaseObject.Destroy()</a>
-    </div>
-    <div>
       <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_HasSyncedMetaData_System_String_">ISharedBaseObject.HasSyncedMetaData(String)</a>
     </div>
     <div>
@@ -331,29 +247,32 @@
     <div>
       <a class="xref" href="AltV.Net.Types.INative.html#AltV_Net_Types_INative_NativePointer">INative.NativePointer</a>
     </div>
+    <div>
+      <a class="xref" href="AltV.Net.Types.INative.html#AltV_Net_Types_INative_Exists">INative.Exists</a>
+    </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Elements.Entities.html">AltV.Net.Elements.Entities</a></h6>
-  <h6><strong>Assembly</strong>: AltV.Net.dll</h6>
-  <h5 id="AltV_Net_Elements_Entities_INetworkObject_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Client.Elements.Interfaces.html">AltV.Net.Client.Elements.Interfaces</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.Client.dll</h6>
+  <h5 id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface INetworkObject : IEntity, ISharedEntity, IWorldObject, ISharedWorldObject, IBaseObject, ISharedBaseObject, INative</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IAudioOutput : IBaseObject, ISharedBaseObject, INative</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_INetworkObject_Alpha.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.INetworkObject.Alpha%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Interfaces_IAudioOutput_AudioOutputNativePointer.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Interfaces.IAudioOutput.AudioOutputNativePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/a89a58fa80f568652d173c26d2f745d6c784e0c5/api/AltV.Net/Elements/Entities/ISharedObject.cs/#L8">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/ddefa4c966499dfb3902c0b729e89bb530beb3aa/api/AltV.Net.Client/Elements/Interfaces/IAudioOutput.cs/#L7">View Source</a>
   </span>
-  <a id="AltV_Net_Elements_Entities_INetworkObject_Alpha_" data-uid="AltV.Net.Elements.Entities.INetworkObject.Alpha*"></a>
-  <h4 id="AltV_Net_Elements_Entities_INetworkObject_Alpha" data-uid="AltV.Net.Elements.Entities.INetworkObject.Alpha">Alpha</h4>
+  <a id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_AudioOutputNativePointer_" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.AudioOutputNativePointer*"></a>
+  <h4 id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_AudioOutputNativePointer" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.AudioOutputNativePointer">AudioOutputNativePointer</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">byte Alpha { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">IntPtr AudioOutputNativePointer { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -365,25 +284,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_INetworkObject_LodDistance.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.INetworkObject.LodDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Interfaces_IAudioOutput_Category.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Interfaces.IAudioOutput.Category%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/a89a58fa80f568652d173c26d2f745d6c784e0c5/api/AltV.Net/Elements/Entities/ISharedObject.cs/#L9">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/ddefa4c966499dfb3902c0b729e89bb530beb3aa/api/AltV.Net.Client/Elements/Interfaces/IAudioOutput.cs/#L11">View Source</a>
   </span>
-  <a id="AltV_Net_Elements_Entities_INetworkObject_LodDistance_" data-uid="AltV.Net.Elements.Entities.INetworkObject.LodDistance*"></a>
-  <h4 id="AltV_Net_Elements_Entities_INetworkObject_LodDistance" data-uid="AltV.Net.Elements.Entities.INetworkObject.LodDistance">LodDistance</h4>
+  <a id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_Category_" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.Category*"></a>
+  <h4 id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_Category" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.Category">Category</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ushort LodDistance { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">uint Category { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -395,25 +314,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="xref">System.UInt32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_INetworkObject_NetworkObjectNativePointer.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.INetworkObject.NetworkObjectNativePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Interfaces_IAudioOutput_Filter.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Interfaces.IAudioOutput.Filter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/a89a58fa80f568652d173c26d2f745d6c784e0c5/api/AltV.Net/Elements/Entities/ISharedObject.cs/#L7">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/ddefa4c966499dfb3902c0b729e89bb530beb3aa/api/AltV.Net.Client/Elements/Interfaces/IAudioOutput.cs/#L16">View Source</a>
   </span>
-  <a id="AltV_Net_Elements_Entities_INetworkObject_NetworkObjectNativePointer_" data-uid="AltV.Net.Elements.Entities.INetworkObject.NetworkObjectNativePointer*"></a>
-  <h4 id="AltV_Net_Elements_Entities_INetworkObject_NetworkObjectNativePointer" data-uid="AltV.Net.Elements.Entities.INetworkObject.NetworkObjectNativePointer">NetworkObjectNativePointer</h4>
+  <a id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_Filter_" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.Filter*"></a>
+  <h4 id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_Filter" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.Filter">Filter</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IntPtr NetworkObjectNativePointer { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IAudioFilter Filter { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -425,25 +344,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><a class="xref" href="AltV.Net.Client.Elements.Interfaces.IAudioFilter.html">IAudioFilter</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_INetworkObject_TextureVariation.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.INetworkObject.TextureVariation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Interfaces_IAudioOutput_IsMuted.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Interfaces.IAudioOutput.IsMuted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/a89a58fa80f568652d173c26d2f745d6c784e0c5/api/AltV.Net/Elements/Entities/ISharedObject.cs/#L12">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/ddefa4c966499dfb3902c0b729e89bb530beb3aa/api/AltV.Net.Client/Elements/Interfaces/IAudioOutput.cs/#L9">View Source</a>
   </span>
-  <a id="AltV_Net_Elements_Entities_INetworkObject_TextureVariation_" data-uid="AltV.Net.Elements.Entities.INetworkObject.TextureVariation*"></a>
-  <h4 id="AltV_Net_Elements_Entities_INetworkObject_TextureVariation" data-uid="AltV.Net.Elements.Entities.INetworkObject.TextureVariation">TextureVariation</h4>
+  <a id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_IsMuted_" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.IsMuted*"></a>
+  <h4 id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_IsMuted" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.IsMuted">IsMuted</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">byte TextureVariation { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">bool IsMuted { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -455,7 +374,67 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span></td>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Interfaces_IAudioOutput_Owner.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Interfaces.IAudioOutput.Owner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/ddefa4c966499dfb3902c0b729e89bb530beb3aa/api/AltV.Net.Client/Elements/Interfaces/IAudioOutput.cs/#L12">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_Owner_" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.Owner*"></a>
+  <h4 id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_Owner" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.Owner">Owner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAudio Owner { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Client.Elements.Interfaces.IAudio.html">IAudio</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Interfaces_IAudioOutput_Volume.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Interfaces.IAudioOutput.Volume%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/ddefa4c966499dfb3902c0b729e89bb530beb3aa/api/AltV.Net.Client/Elements/Interfaces/IAudioOutput.cs/#L8">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_Volume_" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.Volume*"></a>
+  <h4 id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_Volume" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.Volume">Volume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float Volume { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -464,43 +443,50 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_INetworkObject_ActivatePhysics.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.INetworkObject.ActivatePhysics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Interfaces_IAudioOutput_AddFilter_AltV_Net_Client_Elements_Interfaces_IAudioFilter_.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Interfaces.IAudioOutput.AddFilter(AltV.Net.Client.Elements.Interfaces.IAudioFilter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/a89a58fa80f568652d173c26d2f745d6c784e0c5/api/AltV.Net/Elements/Entities/ISharedObject.cs/#L11">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/ddefa4c966499dfb3902c0b729e89bb530beb3aa/api/AltV.Net.Client/Elements/Interfaces/IAudioOutput.cs/#L14">View Source</a>
   </span>
-  <a id="AltV_Net_Elements_Entities_INetworkObject_ActivatePhysics_" data-uid="AltV.Net.Elements.Entities.INetworkObject.ActivatePhysics*"></a>
-  <h4 id="AltV_Net_Elements_Entities_INetworkObject_ActivatePhysics" data-uid="AltV.Net.Elements.Entities.INetworkObject.ActivatePhysics">ActivatePhysics()</h4>
+  <a id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_AddFilter_" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.AddFilter*"></a>
+  <h4 id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_AddFilter_AltV_Net_Client_Elements_Interfaces_IAudioFilter_" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.AddFilter(AltV.Net.Client.Elements.Interfaces.IAudioFilter)">AddFilter(IAudioFilter)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ActivatePhysics()</code></pre>
+    <pre><code class="lang-csharp hljs">void AddFilter(IAudioFilter filter)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Client.Elements.Interfaces.IAudioFilter.html">IAudioFilter</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_INetworkObject_PlaceOnGroundProperly.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.INetworkObject.PlaceOnGroundProperly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Interfaces_IAudioOutput_RemoveFilter.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Interfaces.IAudioOutput.RemoveFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/a89a58fa80f568652d173c26d2f745d6c784e0c5/api/AltV.Net/Elements/Entities/ISharedObject.cs/#L10">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/ddefa4c966499dfb3902c0b729e89bb530beb3aa/api/AltV.Net.Client/Elements/Interfaces/IAudioOutput.cs/#L15">View Source</a>
   </span>
-  <a id="AltV_Net_Elements_Entities_INetworkObject_PlaceOnGroundProperly_" data-uid="AltV.Net.Elements.Entities.INetworkObject.PlaceOnGroundProperly*"></a>
-  <h4 id="AltV_Net_Elements_Entities_INetworkObject_PlaceOnGroundProperly" data-uid="AltV.Net.Elements.Entities.INetworkObject.PlaceOnGroundProperly">PlaceOnGroundProperly()</h4>
+  <a id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_RemoveFilter_" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.RemoveFilter*"></a>
+  <h4 id="AltV_Net_Client_Elements_Interfaces_IAudioOutput_RemoveFilter" data-uid="AltV.Net.Client.Elements.Interfaces.IAudioOutput.RemoveFilter">RemoveFilter()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void PlaceOnGroundProperly()</code></pre>
-  </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.WorldObjectExtensions.html#AltV_Net_Elements_Entities_WorldObjectExtensions_SetPosition_AltV_Net_Elements_Entities_IWorldObject_System_ValueTuple_System_Single_System_Single_System_Single__">WorldObjectExtensions.SetPosition(IWorldObject, (Single X, Single Y, Single Z))</a>
-  </div>
-  <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.WorldObjectExtensions.html#AltV_Net_Elements_Entities_WorldObjectExtensions_SetPosition_AltV_Net_Elements_Entities_IWorldObject_System_Single_System_Single_System_Single_">WorldObjectExtensions.SetPosition(IWorldObject, Single, Single, Single)</a>
-  </div>
-  <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.WorldObjectExtensions.html#AltV_Net_Elements_Entities_WorldObjectExtensions_GetPosition_AltV_Net_Elements_Entities_IWorldObject_">WorldObjectExtensions.GetPosition(IWorldObject)</a>
+    <pre><code class="lang-csharp hljs">void RemoveFilter()</code></pre>
   </div>
 </article>
                     </div>

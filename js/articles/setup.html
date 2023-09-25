@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Setting up an alt:V server with the JS module </title>
+    <title>&#20351;&#29992;JS&#27169;&#22359;&#35774;&#32622;alt:V&#26381;&#21153;&#22120; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Setting up an alt:V server with the JS module ">
+    <meta name="title" content="&#20351;&#29992;JS&#27169;&#22359;&#35774;&#32622;alt:V&#26381;&#21153;&#22120; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#setting-up-an-altv-server-with-the-js-module">Setting up an alt:V server with the JS module</a><ul class="level2 nav bs-docs-sidenav setting-up-an-altv-server-with-the-js-module"><li><a href="#requirements">Requirements</a></li><li><a href="#summary">Summary</a></li><li><a href="#obtaining-the-server-files">Obtaining the server files</a></li><li><a href="#running-the-server">Running the server</a><ul class="level3 nav bs-docs-sidenav running-the-server"><li><a href="#visual-studio-code">Visual Studio Code</a></li><li><a href="#powershell">PowerShell</a></li><li><a href="#command-prompt">Command Prompt</a></li></ul></li><li><a href="#configuring-your-client-for-development">Configuring your client for development</a><ul class="level3 nav bs-docs-sidenav configuring-your-client-for-development"><li><a href="#using-branches">Using branches</a></li><li><a href="#using-debug-mode-client">Using debug mode (client)</a><ul class="level4 nav bs-docs-sidenav using-debug-mode-client"><li><a href="#using-debug-mode-server">Using debug mode (server)</a></li><li><a href="#adding-resources">Adding resources</a></li><li><a href="#typescript-video-tutorial">Typescript Video Tutorial</a></li></ul></li></ul></li><li><a href="#configuring-the-servertoml">Configuring the server.toml</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#使用js模块设置altv服务器">使用JS模块设置alt:V服务器</a><ul class="level2 nav bs-docs-sidenav 使用js模块设置altv服务器"><li><a href="#要求">要求</a></li><li><a href="#总结">总结</a></li><li><a href="#获取服务器文件">获取服务器文件</a></li><li><a href="#运行服务器">运行服务器</a><ul class="level3 nav bs-docs-sidenav 运行服务器"><li><a href="#visual-studio-code">Visual Studio Code</a></li><li><a href="#powershell">PowerShell</a></li><li><a href="#命令提示符">命令提示符</a></li></ul></li><li><a href="#配置客户端进行开发">配置客户端进行开发</a><ul class="level3 nav bs-docs-sidenav 配置客户端进行开发"><li><a href="#使用分支">使用分支</a></li><li><a href="#使用debug模式altv客户端">使用debug模式（alt:V客户端）</a><ul class="level4 nav bs-docs-sidenav 使用debug模式altv客户端"><li><a href="#使用debug模式-服务器端">使用debug模式 (服务器端)</a></li><li><a href="#添加资源">添加资源</a></li><li><a href="#typescript视频教程">Typescript视频教程</a></li></ul></li></ul></li><li><a href="#配置-servertoml">配置 server.toml</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,74 +132,74 @@
                                     </ul>
                                 </span>
 
-<h1 id="setting-up-an-altv-server-with-the-js-module">Setting up an alt:V server with the JS module</h1>
+<h1 id="使用js模块设置altv服务器">使用JS模块设置alt:V服务器</h1>
 
-<p>This article will explain how to setup an alt:V server with the JS module.</p>
-<h2 id="requirements">Requirements</h2>
+<p>本文将介绍如何使用JS模块设置alt:V服务器。</p>
+<h2 id="要求">要求</h2>
 <ul>
-<li><a href="https://nodejs.org/en/">Latest Version of NodeJS</a></li>
-<li>A Code Editor (Visual Studio Code, Sublime Text etc.)</li>
-<li>Basic knowledge of command prompts</li>
-<li>VC Redist Latest Version installed</li>
-<li>Windows 10+ or Linux (For running the server)</li>
+<li><a href="https://nodejs.org/en/">NodeJS的最新版本</a></li>
+<li>代码编辑器(Visual Studio Code、Sublime Text等)</li>
+<li>命令提示符的基本知识</li>
+<li>安装了VC Redist的最新版本</li>
+<li>Windows 10+、Linux操作系统(服务器使用)</li>
 </ul>
-<h2 id="summary">Summary</h2>
-<p>If you are interested in learning all of the ins and outs of getting a server setup please follow this tutorial entirely.</p>
-<p>If you are more interested in getting a server running in a few minutes check out <a href="https://github.com/Stuyk/altv-quickstart">alt:V Quickstart repository</a> and follow those instructions.</p>
-<h2 id="obtaining-the-server-files">Obtaining the server files</h2>
-<p><a href="https://altv.mp/#/downloads">Download</a> the latest build here.
-Within the Dropdown navigate to: <strong>Release</strong>, <strong>Release candidate</strong> OR <strong>Development</strong>*.<br>
-*For development, most of the time the branch release candidate is used.</p>
-<p>Tick the following elements:</p>
+<h2 id="总结">总结</h2>
+<p>如果你有兴趣了解服务器设置的所有细节，请完全遵循本教程。</p>
+<p>如果您对在几分钟内运行服务器更感兴趣，请查看<a href="https://github.com/Stuyk/altv-quickstart">alt:V Quickstart repository</a>并按照这些说明操作。</p>
+<h2 id="获取服务器文件">获取服务器文件</h2>
+<p><a href="https://altv.mp/#/downloads">下载</a> 这里是最新版本。
+在下拉菜单中导航到:<strong>Release</strong>、<strong>Release candidate</strong>或<strong>Development</strong>*<br>
+<strong>对于开发，大部分时间使用release candidate版本。</strong></p>
+<p>勾选以下选项:</p>
 <pre><code>[x] Data Files
 [x] JS Module
 [ ] C# Module
 [x] Sample Config File
 [x] Example Resource Pack
 </code></pre>
-<p>Press <strong>DOWNLOAD</strong> and once you're done =&gt; Extract the .zip with your preferred program (7-Zip, Winrar, etc.)*</p>
-<p>*Into a folder that is <strong>not</strong> on your Desktop!</p>
-<h2 id="running-the-server">Running the server</h2>
-<p>Depending on your chosen Code Editor, you may consider the following options:</p>
+<p>点击<strong>DOWNLOAD</strong>，完成后=&gt;用你喜欢的程序(7-Zip, Winrar等)解压缩</p>
+<p>*不要放在桌面的文件夹中！</p>
+<h2 id="运行服务器">运行服务器</h2>
+<p>根据你选择的代码编辑器，你可以考虑以下选项:</p>
 <h3 id="visual-studio-code">Visual Studio Code</h3>
-<pre><code class="lang-md">- Within VSC, open the Server Root (File &gt; Open Folder)
-- Create a new Terminal (Terminal &gt; New Terminal )
+<pre><code class="lang-md">- 在Visual Studio Code中，打开服务器根目录(文件&gt;打开文件夹)
+- 创建一个新终端(终端&gt;新终端)
 
-Once you archieved to have a Terminal, it's up to you:
+一旦你有了一个终端，就看你的了:
 
-For PowerShell:
-- Select the Prompt PowerShell
+PowerShell:
+- 选择PowerShell终端
 - Type &gt; ./altv-server.exe
 
-For Command Prompt:
-- Select the Command Prompt
+命令提示符:
+- 选择命令提示符
 - Type &gt; altv-server.exe
 
-Congrats, your server is now running
+恭喜，你的服务器现在正在运行
 
-- Press CTRL + C to stop the server.
-- Press arrow up and press enter simply restart the server.
+- 按CTRL + C停止服务器。
+- 按向上箭头并按enter重启服务器。
 </code></pre>
 <h3 id="powershell">PowerShell</h3>
-<pre><code class="lang-md">- Navigate to the root folder of your altv-server.exe 
-- Head to the adress bar of the file explorer
+<pre><code class="lang-md">- 导航到altv-server.exe的根文件夹
+- 转到文件资源管理器的地址栏
 - Type &gt; powershell
 - Type &gt; ./altv-server.exe
 
-Congrats, your server is now running
+恭喜，你的服务器现在正在运行
 
-- Press CTRL + C to stop the server.
-- Press arrow up and press enter simply restart the server.
+- 按CTRL + C停止服务器。
+- 按向上箭头并按enter重启服务器。
 </code></pre>
-<h3 id="command-prompt">Command Prompt</h3>
-<pre><code class="lang-md">Just run altv-server.exe
+<h3 id="命令提示符">命令提示符</h3>
+<pre><code class="lang-md">只需要运行 altv-server.exe
 </code></pre>
-<h2 id="configuring-your-client-for-development">Configuring your client for development</h2>
+<h2 id="配置客户端进行开发">配置客户端进行开发</h2>
 <ul>
-<li>Navigate to your root of alt:V Client</li>
-<li>View <code>altv.toml</code> in your preferred editor</li>
+<li>切换到alt:V安装的根目录</li>
+<li>在你的编辑器中打开<code>altv.toml</code></li>
 </ul>
-<p>Now something similar to this should appear:</p>
+<p>现在应该会出现类似下面的内容:</p>
 <pre><code class="lang-toml">branch = 'rc'
 build = 1182
 debug = true
@@ -216,15 +216,15 @@ voiceEnabled = true
 voiceInputSensitivity = 20
 voiceVolume = 100
 </code></pre>
-<h3 id="using-branches">Using branches</h3>
-<p>Set your branch based on what you've choose in <a href="#obtaining-the-server-files">Obtaining the Server Files</a>.
-Branch names:</p>
+<h3 id="使用分支">使用分支</h3>
+<p>根据你在<a href="#obtaining-the-server-files">获取服务器文件</a>中选择的内容来设置你的分支。
+分支名称:</p>
 <ul>
 <li>release</li>
 <li>release candidate</li>
 <li>dev</li>
 </ul>
-<pre><code class="lang-toml"># Release (Mostly used):
+<pre><code class="lang-toml"># Release (最多使用):
 branch = 'release'
 
 # Release candidate:
@@ -233,15 +233,15 @@ branch = 'rc'
 # Development:
 branch = 'dev'
 </code></pre>
-<h3 id="using-debug-mode-client">Using debug mode (client)</h3>
-<p>Edit the <code>altv.toml</code> in the directory of your alt:V installation and add the following:</p>
+<h3 id="使用debug模式altv客户端">使用debug模式（alt:V客户端）</h3>
+<p>在你的alt:V安装目录下编辑<code>altv.toml</code>文件，添加如下代码:</p>
 <pre><code class="lang-toml">debug = true
 </code></pre>
-<p>This allows the usage of several debug features like reconnect etc. with your F8 console.</p>
-<h2 id="configuring-the-servertoml">Configuring the <code>server.toml</code></h2>
-<p>Once you're done changing the stated things above, it's time to head to the server again.
-The <code>server.toml</code> is where the magic happens, here you can change what is most important.</p>
-<p>Once opened, something similar to this should appear:</p>
+<p>这允许使用一些调试功能，如重新连接等与你的F8控制台。</p>
+<h2 id="配置-servertoml">配置 <code>server.toml</code></h2>
+<p>一旦你完成了上述更改，就该再次前往服务器了。
+这就是 <code>server.toml</code> 神奇的地方，在这里你可以改变最重要的东西。</p>
+<p>打开后，应该出现类似下面的内容:</p>
 <pre><code class="lang-toml">name = 'alt:V Server'
 host = '0.0.0.0'
 port = 7788
@@ -258,32 +258,32 @@ resources = [
   
 ]
 </code></pre>
-<h2 id="using-debug-mode-server">Using debug mode (server)</h2>
-<p>While you are developing make sure you <strong>ENABLE</strong> the following inside the <code>server.toml</code>.
-Add this to your config:</p>
+<h2 id="使用debug模式-服务器端">使用debug模式 (服务器端)</h2>
+<p>在开发过程中，请确保在<code>server.toml</code>中<strong>启用</strong>以下内容。
+把这个添加到你的配置中:</p>
 <pre><code class="lang-toml">debug = true
 </code></pre>
-<p>Once enabled, you can now use several debug commands like:</p>
-<p><code>restart [RESOURCE]</code> (server) <br>
-<code>stop [RESOURCE]</code> (server) <br>
-<code>start [RESOURCE]</code> (server) <br>
-<code>reconnect</code>* (client)<br>
-*Reconnect can cause bugs and issues, this is an experimental feature and only meant to be used in development.</p>
-<p>See <a href="https://docs.altv.mp/articles/commandlineargs.html#server-commands">server commands</a> for all server console commands, and <a href="https://docs.altv.mp/articles/console.html">client console</a> for all client console (F8) commands.</p>
-<h2 id="adding-resources">Adding resources</h2>
-<p>Adding a resource is as simple as putting the folders name inside of the resources array.</p>
-<p>Right now, your resource array is empty.
-Keep in mind, as you've chosen the Example Resource Pack you've got three example resources.</p>
-<p>Load them, by simple adding the folder names*<br>
-*The name is case sensitive! - Also templating with [resourceName] isn't gonna work as seen in other multiplayer modifications.</p>
+<p>启用后，你现在可以使用如下调试命令:</p>
+<p><code>restart [资源名]</code> (服务器端) <br>
+<code>stop [资源名]</code> (服务器端) <br>
+<code>start [资源名]</code> (服务器端) <br>
+<code>reconnect</code> (客户端)<br>
+*Reconnect可能会导致bug和问题，这是一个实验性的功能，只打算在开发中使用。</p>
+<p>请参阅<a href="https://docs.altv.mp/articles/commandlineargs.html#server-commands">服务器命令</a>了解所有服务器控制台命令，<a href="https://docs.altv.mp/articles/console.html">客户端控制台</a>了解所有客户端控制台(F8)命令。</p>
+<h2 id="添加资源">添加资源</h2>
+<p>添加资源很简单，只需将文件夹名称放在resources数组中即可。</p>
+<p>现在，资源数组是空的。
+请记住，当您选择示例资源包时，您将获得三个示例资源。</p>
+<p>通过简单地添加文件夹名称来加载它们<br></p>
+<p>*名称区分大小写！—同样的模板[资源名]不会工作，不像其他多人模式修改那样有效。</p>
 <pre><code class="lang-toml">resources = [
     'freeroam',
     'chat',
     'newResource'
 ]
 </code></pre>
-<h2 id="typescript-video-tutorial">Typescript Video Tutorial</h2>
-<p>If you want to learn how to setup a alt:V resource using typescript, watch this video tutorial created by Stuyk:</p>
+<h2 id="typescript视频教程">Typescript视频教程</h2>
+<p>如果你想学习如何使用TypeScript设置alt:V资源，请观看Stuyk创建的视频教程:</p>
 <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/UTeNEiyrrIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 </article>
                     </div>

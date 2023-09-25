@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Import assertions </title>
+    <title>&#23548;&#20837;&#26029;&#35328; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Import assertions ">
+    <meta name="title" content="&#23548;&#20837;&#26029;&#35328; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#import-assertions">Import assertions</a><ul class="level2 nav bs-docs-sidenav import-assertions"><li><a href="#general-information">General Information</a></li><li><a href="#implementing-import-assertions">Implementing import assertions</a></li><li><a href="#dynamic-import-assertions">Dynamic import assertions</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#导入断言">导入断言</a><ul class="level2 nav bs-docs-sidenav 导入断言"><li><a href="#一般信息">一般信息</a></li><li><a href="#实现导入断言">实现导入断言</a></li><li><a href="#动态导入断言">动态导入断言</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,13 +132,13 @@
                                     </ul>
                                 </span>
 
-<h1 id="import-assertions">Import assertions</h1>
+<h1 id="导入断言">导入断言</h1>
 
-<p>This is only available on clientside.</p>
-<h2 id="general-information">General Information</h2>
-<p>As you might know, you can import a module (JS module, JSON file, etc...) by using the <code>import</code> keyword. However, there might be a security issue if you import a file with an extension that is not equivalent to the file content. Therefore, import assertions are proposed for the upcoming ECMA2022 standard. As the clientside of alt:V depends on Google's V8 engine, import assertions are available as V8 supports them. If a file can not be parsed based on the type of the import assertion, the file import will fail to prevent security issues. Currently, alt:V supports the following types of import assertions: <code>source</code>, <code>base64</code> and <code>json</code>.</p>
-<h2 id="implementing-import-assertions">Implementing import assertions</h2>
-<p>You can use import assertions to check if a file is safe to import. The following example shows how to use import assertions with different types of import assertions.</p>
+<p>这只在客户端可用。</p>
+<h2 id="一般信息">一般信息</h2>
+<p>你可能知道，你可以使用<code>import</code>关键字导入一个模块(JS模块、JSON文件等)。但是，如果您导入的文件扩展名与文件内容不相同，则可能会出现安全问题。因此，为即将到来的ECMA2022标准提出了导入断言。因为alt:V的客户端依赖于谷歌的V8引擎，所以导入断言是可用的，因为V8支持它们。如果无法根据导入断言的类型解析文件，则文件导入将无法防止安全问题。目前，alt:V支持以下类型的导入断言:<code>source</code>， <code>base64</code>和<code>json</code>。</p>
+<h2 id="实现导入断言">实现导入断言</h2>
+<p>你可以使用导入断言来检查文件是否可以安全导入。下面的例子展示了如何使用不同类型的导入断言。</p>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S">
 <ul role="tablist">
 <li role="presentation">
@@ -154,7 +154,7 @@
 import &quot;Y29uc29sZS5sb2coJ2NoZWNrIHNvdXJjZSBpbXBvcnQnKQ==&quot; assert { type: &quot;base64&quot; };
 
 import json from &quot;/data.json&quot; assert { type: &quot;json&quot; };
-console.log(json.name); // returns &quot;John Doe&quot;
+console.log(json.name); // 返回 &quot;John Doe&quot;
 </code></pre>
 </section>
 <section id="tabpanel_bHGHmlrG6S_tab1-1" role="tabpanel" data-tab="tab1-1" aria-hidden="true" hidden="hidden">
@@ -166,8 +166,8 @@ console.log(json.name); // returns &quot;John Doe&quot;
 </code></pre>
 </section>
 </div>
-<h2 id="dynamic-import-assertions">Dynamic import assertions</h2>
-<p>It is also possible to use import assertions for dynamic imports.</p>
+<h2 id="动态导入断言">动态导入断言</h2>
+<p>对于动态导入，也可以使用import断言。</p>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
 <ul role="tablist">
 <li role="presentation">
@@ -181,11 +181,11 @@ console.log(json.name); // returns &quot;John Doe&quot;
 
 <pre><code class="lang-js">(async () =&gt; {
   await import(&quot;Y29uc29sZS5sb2coJ2R5bmFtaWMgaW1wb3J0IHdpdGggaW1wb3J0IGFzc2VydGlvbiBvZiB0eXBlIHNvdXJjZScp&quot;, { assert: { type: &quot;base64&quot; } });
-  await import(&quot;console.log('dynamic import with import assertion of type source')&quot;, { assert: { type: &quot;source&quot; } });
+  await import(&quot;console.log('使用导入源类型断言动态导入')&quot;, { assert: { type: &quot;source&quot; } });
 });
 
 const json = await import(&quot;./data.json&quot;, { assert: { type: &quot;json&quot; } });
-console.log(json.default.age); // returns &quot;42&quot;
+console.log(json.default.age); // 返回 &quot;42&quot;
 </code></pre>
 </section>
 <section id="tabpanel_bHGHmlrG6S-1_tab2-1" role="tabpanel" data-tab="tab2-1" aria-hidden="true" hidden="hidden">

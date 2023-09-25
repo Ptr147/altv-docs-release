@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Encryption / Password Hashing </title>
+    <title>&#21152;&#23494; / &#23494;&#30721;&#25955;&#21015; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Encryption / Password Hashing ">
+    <meta name="title" content="&#21152;&#23494; / &#23494;&#30721;&#25955;&#21015; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#encryption--password-hashing">Encryption / Password Hashing</a><ul class="level2 nav bs-docs-sidenav encryption--password-hashing"><li><a href="#example-usage">Example Usage</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#加密--密码散列">加密 / 密码散列</a><ul class="level2 nav bs-docs-sidenav 加密--密码散列"><li><a href="#example-usage">Example Usage</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,18 +132,18 @@
                                     </ul>
                                 </span>
 
-<h1 id="encryption--password-hashing">Encryption / Password Hashing</h1>
+<h1 id="加密--密码散列">加密 / 密码散列</h1>
 
-<p>This requires a library called <code>sjcl</code>.</p>
-<p>This will let you perform a PBKDF2 encryption.</p>
-<p>You can install it in your package.json by doing: <code>npm install sjcl</code></p>
+<p>这需要引入一个名为<code>sjcl</code>的库。</p>
+<p>这将允许您执行PBKDF2加密。</p>
+<p>你可以在包中安装它。通过执行<code>npm install sjcl</code>命令获取Json</p>
 <p><strong>Server Side</strong></p>
 <pre><code class="lang-js">import sjcl from 'sjcl';
 
 /**
- * Hash a password with pbkdf2
+ * 用pbkdf2散列密码
  * @param {string} password
- * @returns {string} A password hash.
+ * @returns {string} 密码hash.
  */
 export function encryptPassword(password) {
     const saltBits = sjcl.random.randomWords(2, 0);
@@ -153,10 +153,10 @@ export function encryptPassword(password) {
 }
 
 /**
- * Verify a password matches with pbkdf2.
+ * 验证密码是否与pbkdf2匹配。
  * @param {string} password
  * @param {string} storedPasswordHash
- * @returns {bool} true if correct password
+ * @returns {bool} 如果密码正确，返回true
  */
 export function verifyPassword(password, storedPasswordHash) {
     const [_key, _salt] = storedPasswordHash.split('$');
@@ -172,7 +172,7 @@ export function verifyPassword(password, storedPasswordHash) {
 }
 
 /**
- * Generate a hash based on string.
+ * 基于字符串生成哈希。
  * @param {string} data
  */
 export function generateHash(data) {
@@ -181,7 +181,7 @@ export function generateHash(data) {
 }
 
 /**
- * Generate a persistent hash based on string.
+ * 基于string生成持久哈希。
  * @param {string} data
  */
 export function persistentHash(data) {

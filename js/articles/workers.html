@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Workers </title>
+    <title>&#24037;&#20154; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Workers ">
+    <meta name="title" content="&#24037;&#20154; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#workers">Workers</a><ul class="level2 nav bs-docs-sidenav workers"><li><a href="#what-are-the-altv-workers">What are the alt:V Workers</a><ul class="level3 nav bs-docs-sidenav what-are-the-altv-workers"><li><a href="#important-notes">Important notes</a></li></ul></li><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#classes-available-in-a-worker">Classes available in a worker</a></li><li><a href="#functions-available-in-a-worker">Functions available in a worker</a></li><li><a href="#properties-available-in-a-worker">Properties available in a worker</a></li><li><a href="#how-to-create-a-worker">How to create a worker</a></li></ul></li><li><a href="#built-in-worker-events">Built-in worker events</a><ul class="level3 nav bs-docs-sidenav built-in-worker-events"><li><a href="#knowing-when-the-worker-is-loaded">Knowing when the worker is loaded</a></li><li><a href="#error-handling">Error handling</a></li><li><a href="#communicating-from-the-client-to-the-worker">Communicating from the client to the Worker</a></li><li><a href="#communicating-from-the-worker-to-the-client">Communicating from the worker to the client</a></li><li><a href="#using-shared-array-buffers">Using shared array buffers</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#工人">工人</a><ul class="level2 nav bs-docs-sidenav 工人"><li><a href="#什么是altv工人">什么是alt:V工人</a><ul class="level3 nav bs-docs-sidenav 什么是altv工人"><li><a href="#重要提示">重要提示</a></li></ul></li><li><a href="#用法">用法</a><ul class="level3 nav bs-docs-sidenav 用法"><li><a href="#worker中可用的类">worker中可用的类</a></li><li><a href="#worker中可用的函数">worker中可用的函数</a></li><li><a href="#worker中可用的属性">worker中可用的属性</a></li><li><a href="#如何创建worker">如何创建worker</a></li></ul></li><li><a href="#内置worker事件">内置worker事件</a><ul class="level3 nav bs-docs-sidenav 内置worker事件"><li><a href="#了解worker加载完成时机">了解worker加载完成时机</a></li><li><a href="#错误处理">错误处理</a></li><li><a href="#从客户端向worker进行通信">从客户端向Worker进行通信</a></li><li><a href="#从worker向客户端进行通信">从Worker向客户端进行通信</a></li><li><a href="#使用共享数组缓冲区">使用共享数组缓冲区</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,133 +132,131 @@
                                     </ul>
                                 </span>
 
-<h1 id="workers">Workers</h1>
+<h1 id="工人">工人</h1>
 
-<h2 id="what-are-the-altv-workers">What are the alt:V Workers</h2>
-<p>The alt:V workers implementation is very similar to the NodeJS one as it allows you to run javascript code in parallel in another thread.
-Workers (threads) are useful for performing CPU-intensive operations, while they aren't any big help with I/O-intensive work.
-The V8 asynchronous I/O operations are more efficient than Workers can be.</p>
-<h3 id="important-notes">Important notes</h3>
+<h2 id="什么是altv工人">什么是alt:V工人</h2>
+<p>alt:V中的workers实现与NodeJS非常相似，因为它允许你在另一个线程中并行运行JavaScript代码。Workers（线程）对于执行CPU密集型操作非常有用，但对于I/O密集型工作并没有太大帮助。V8引擎的异步I/O操作比Workers更高效。</p>
+<h3 id="重要提示">重要提示</h3>
 <ul>
-<li>Natives are not accessible in workers</li>
-<li>Creating a worker thread won't make your code perform better, it will just offload it in another thread</li>
+<li>在Workers中无法访问Native函数。</li>
+<li>创建一个worker线程并不会让你的代码运行更快，它只是将任务分配到另一个线程中</li>
 </ul>
-<h2 id="usage">Usage</h2>
+<h2 id="用法">用法</h2>
 <div class="CAUTION">
 <h5>Caution</h5>
-<p>In order to be able to use the alt:V Worker API, you must import it via <code>import * as alt from alt-worker</code>. You can find the whole worker class api <a href="https://docs.altv.mp/js/api/alt-client.Worker.html">here</a></p>
+<p>为了能够使用alt:V Worker API，你必须通过 <code>import * as alt from alt-worker</code> 进行导入。你可以在<a href="https://docs.altv.mp/js/api/alt-client.Worker.html">这里</a>找到整个Worker类的API。</p>
 </div>
-<h3 id="classes-available-in-a-worker">Classes available in a worker</h3>
-<p>Only the following client-side alt API classes that are thread safe are available in a Worker:</p>
+<h3 id="worker中可用的类">worker中可用的类</h3>
+<p>只有以下是线程安全的客户端alt API类可在Worker中使用：</p>
 <ul>
 <li>alt.File</li>
 <li>alt.RGBA</li>
 <li>alt.Vector2</li>
 <li>alt.Vector3</li>
 </ul>
-<h3 id="functions-available-in-a-worker">Functions available in a worker</h3>
-<p>In the alt:V context, basics like <code>setInterval</code> or <code>console.log</code> don't exist. That's why we expose our own functions for it, but to make it easier if you do <code>setInterval</code> or <code>console.log</code> it will call the corresponding alt method.</p>
+<h3 id="worker中可用的函数">worker中可用的函数</h3>
+<p>在alt:V环境中，诸如 <code>setInterval</code> 或 <code>console.log</code> 等基本功能是不存在的。这就是为什么我们会为它们暴露我们自己的函数，但为了更方便，如果你使用 <code>setInterval</code> 或 <code>console.log</code>，它将调用相应的alt方法。</p>
 <table>
 <thead>
 <tr>
-<th>Function Name</th>
-<th>Description</th>
+<th>方法名</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>alt.emit</td>
-<td>Emit an event to the client side.</td>
+<td>向客户端发送一个事件 side.</td>
 </tr>
 <tr>
 <td>alt.on</td>
-<td>Receives an event emitted from the client side.</td>
+<td>接收从客户端发出的事件 side.</td>
 </tr>
 <tr>
 <td>alt.once</td>
-<td>Receives an event emitted from the client-side. Once triggered the handler is destroyed.</td>
+<td>接收从客户端发出的事件。一旦触发，处理程序将被销毁。</td>
 </tr>
 <tr>
 <td>alt.log</td>
-<td>Logs the specified arguments to the console using alt:V logger. (gets printed in the client logs files).</td>
+<td>使用alt:V日志记录器将指定的参数记录到控制台（会打印到客户端日志文件中）。</td>
 </tr>
 <tr>
 <td>alt.logWarning</td>
-<td>Logs the specified arguments as a warning to the console using alt:V logger.</td>
+<td>使用alt:V日志记录器将指定的参数记录为控制台警告。</td>
 </tr>
 <tr>
 <td>alt.logError</td>
-<td>Logs the specified arguments as an error to the console using alt:V logger.</td>
+<td>使用alt:V日志记录器将指定的参数记录为控制台错误。</td>
 </tr>
 <tr>
 <td>alt.nextTick</td>
-<td>Schedules execution of handler on next tick/next frame.</td>
+<td>安排在下一帧/下一tick上执行处理程序。</td>
 </tr>
 <tr>
 <td>alt.setInterval</td>
-<td>Schedules execution of handler in specified intervals.</td>
+<td>安排以指定间隔执行处理程序。</td>
 </tr>
 <tr>
 <td>alt.setTimeout</td>
-<td>Schedules execution of handler once after the expiration of interval.</td>
+<td>安排处理程序在间隔到期后执行一次。</td>
 </tr>
 <tr>
 <td>alt.clearNextTick</td>
-<td>Clears a timer set with the nextTick function.</td>
+<td>清除使用nextTick函数设置的定时器。</td>
 </tr>
 <tr>
 <td>alt.clearInterval</td>
-<td>Clears a timer set with the setInterval function.</td>
+<td>清除使用setInterval函数设置的定时器。</td>
 </tr>
 <tr>
 <td>alt.clearTimeout</td>
-<td>Clears a timer set with the setTimeout function.</td>
+<td>清除使用setTimeout函数设置的定时器。</td>
 </tr>
 <tr>
 <td>alt.hash</td>
-<td>Creates a hash using Jenkins one-at-a-time algorithm.</td>
+<td>使用Jenkins one-at-a-time算法创建哈希。</td>
 </tr>
 <tr>
 <td>alt.getSharedArrayBuffer</td>
-<td>Retrieves the shared array buffer instance with the given id.</td>
+<td>检索具有给定ID的共享数组缓冲实例。</td>
 </tr>
 </tbody>
 </table>
-<h3 id="properties-available-in-a-worker">Properties available in a worker</h3>
+<h3 id="worker中可用的属性">worker中可用的属性</h3>
 <table>
 <thead>
 <tr>
-<th>Property Name</th>
-<th>Description</th>
+<th>属性名</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>alt.version</td>
-<td>Represents the current version.</td>
+<td>表示当前版本。</td>
 </tr>
 <tr>
 <td>alt.branch</td>
-<td>Represents the current branch.</td>
+<td>表示当前分支。</td>
 </tr>
 <tr>
 <td>alt.sdkVersion</td>
-<td>Represents the current SDK version.</td>
+<td>表示当前SDK版本。</td>
 </tr>
 <tr>
 <td>alt.debug</td>
-<td>Returns if the resource is in debug mode.</td>
+<td>返回资源是否处于调试模式。</td>
 </tr>
 </tbody>
 </table>
-<h3 id="how-to-create-a-worker">How to create a worker</h3>
+<h3 id="如何创建worker">如何创建worker</h3>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_tab1-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-0" data-tab="tab1-0" tabindex="0" aria-selected="true">relative path</a>
+<a href="#tabpanel_bHGHmlrG6S_tab1-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-0" data-tab="tab1-0" tabindex="0" aria-selected="true">相对路径</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_tab1-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-1" data-tab="tab1-1" tabindex="-1">absolute path</a>
+<a href="#tabpanel_bHGHmlrG6S_tab1-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-1" data-tab="tab1-1" tabindex="-1">绝对路径</a>
 </li>
 </ul>
 <section id="tabpanel_bHGHmlrG6S_tab1-0" role="tabpanel" data-tab="tab1-0">
@@ -273,24 +271,24 @@ worker.start();
 
 <pre><code class="lang-js">import * as alt from 'alt-client';
 
-// Path starting from the resource root directory
+// 从资源根目录开始的路径
 const worker = new alt.Worker('/client/worker.js');
 worker.start();
 </code></pre>
 </section>
 </div>
-<h2 id="built-in-worker-events">Built-in worker events</h2>
-<h3 id="knowing-when-the-worker-is-loaded">Knowing when the worker is loaded</h3>
+<h2 id="内置worker事件">内置worker事件</h2>
+<h3 id="了解worker加载完成时机">了解worker加载完成时机</h3>
 <pre><code class="lang-js">worker.on('load', () =&gt; {
     console.log('Worker loaded');
 });
 </code></pre>
-<h3 id="error-handling">Error handling</h3>
+<h3 id="错误处理">错误处理</h3>
 <pre><code class="lang-js">worker.on('error', (error) =&gt; {
     console.log(error);
 });
 </code></pre>
-<h3 id="communicating-from-the-client-to-the-worker">Communicating from the client to the Worker</h3>
+<h3 id="从客户端向worker进行通信">从客户端向Worker进行通信</h3>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
 <ul role="tablist">
 <li role="presentation">
@@ -320,7 +318,7 @@ alt.on('eventName', (...args) =&gt; {
 </code></pre>
 </section>
 </div>
-<h3 id="communicating-from-the-worker-to-the-client">Communicating from the worker to the client</h3>
+<h3 id="从worker向客户端进行通信">从Worker向客户端进行通信</h3>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S-2">
 <ul role="tablist">
 <li role="presentation">
@@ -349,15 +347,15 @@ worker.on('eventName', (...args) =&gt; {
 </code></pre>
 </section>
 </div>
-<h3 id="using-shared-array-buffers">Using shared array buffers</h3>
-<p>An <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer">ArrayBuffer</a> is an object used to represent a generic, fixed-length raw binary data buffer.
-It is an array of bytes, you cannot directly manipulate its content but create a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray">TypedArray</a> object / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView">DataView</a> to read and write the buffer content.</p>
-<p>A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer">SharedArrayBuffer</a> is very similar to an array buffer except it is built in a way that they can be used to create views on shared memory.</p>
+<h3 id="使用共享数组缓冲区">使用共享数组缓冲区</h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer">ArrayBuffer</a> 是用于表示通用、固定长度的原始二进制数据缓冲区的对象。
+它是字节的数组，你不能直接操作其内容，但可以创建 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray">TypedArray</a> 对象或 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView">DataView</a> 来读取和写入缓冲区内容。</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer">SharedArrayBuffer</a> 与数组缓冲区非常相似，不同之处在于它们可以用于在共享内存上创建视图。</p>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>You should learn how to use SharedArrayBuffers outside of the alt:V context in order to use them properly. The following example is making use of the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics">Atomics</a> API to make the SharedArrayBuffer usage <a href="https://en.wikipedia.org/wiki/Thread_safety">thread safe</a></p>
+<p>为了正确使用SharedArrayBuffers，你应该学习如何在alt:V环境之外使用它们。以下示例利用<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics">Atomics</a> API来确保SharedArrayBuffer的<a href="https://en.wikipedia.org/wiki/Thread_safety">线程安全</a>。</p>
 </div>
-<p><strong>Example usage</strong></p>
+<p><strong>示例用例</strong></p>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S-3">
 <ul role="tablist">
 <li role="presentation">
@@ -379,20 +377,20 @@ const sharedArray = new Int32Array(buffer);
 
 worker.on('changedValue', () =&gt; {
      for(let i = 0; i &lt; 10; i++){
-       // Output of the changed values on &quot;main thread&quot;
+       // 在&quot;主线程&quot;上输出更改后的值
        const value = Atomics.load(sharedArray,i);
        console.log(`[Main thread]: Value of index ${i} is ${value}`);
     }
 });
 
 function createBuffer() {
-    // Calculating the size of the buffer size depending on the array type
+    // 根据数组类型计算缓冲区大小
     const length = 10;
     const size = Int32Array.BYTES_PER_ELEMENT * length;
     const sharedBuffer = new SharedArrayBuffer(size);
     const sharedArray = new Int32Array(sharedBuffer);
       
-    // applying values to the array
+    // 向数组应用值
     for(let i = 0; i&lt; 10; i++){
         sharedArray[i] = i*20;
     }
@@ -408,20 +406,20 @@ function createBuffer() {
 <section id="tabpanel_bHGHmlrG6S-3_tab4-1" role="tabpanel" data-tab="tab4-1" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-js">alt.on('addedMyBuffer', (index) =&gt; {
-    //Getting the buffer by index and generate a Int32Array 
+    //通过索引获取缓冲区并生成一个Int32Array
     const buffer = alt.getSharedArrayBuffer(index);
     const sharedArray = new Int32Array(buffer);
 
     for(let i = 0; i &lt; 10; i++) {
-        //Read the value
+        //读取值
         const arrayValue = Atomics.load(sharedArray, i);
         console.log(`[Worker] Value from main thread for [${i}] is ${arrayValue}`);
 
-        // Atomics.exchange returns the old value on i.
+        // Atomics.exchange 返回索引 i 上的旧值。
         const oldValue = Atomics.exchange(sharedArray, i, 5)
         console.log(`[Worker] Value change to 5 on [${i}]`);
 
-        // reading the new value
+        // 读取新值
         const changedValue = Atomics.load(sharedArray, i);
         console.log(`[Worker] New value on ${i} is ${changedValue} (old value: ${oldValue})`);
 

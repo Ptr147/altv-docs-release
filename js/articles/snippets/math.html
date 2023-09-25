@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Math &amp; Distance Utility Functions </title>
+    <title>&#25968;&#23398;&#21644;&#36317;&#31163;&#25928;&#29992;&#20989;&#25968; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Math &amp; Distance Utility Functions ">
+    <meta name="title" content="&#25968;&#23398;&#21644;&#36317;&#31163;&#25928;&#29992;&#20989;&#25968; ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#math--distance-utility-functions">Math &amp; Distance Utility Functions</a><ul class="level2 nav bs-docs-sidenav math--distance-utility-functions"><li><a href="#example-usage">Example Usage</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#数学和距离效用函数">数学和距离效用函数</a><ul class="level2 nav bs-docs-sidenav 数学和距离效用函数"><li><a href="#示例用法">示例用法</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,12 +132,12 @@
                                     </ul>
                                 </span>
 
-<h1 id="math--distance-utility-functions">Math &amp; Distance Utility Functions</h1>
+<h1 id="数学和距离效用函数">数学和距离效用函数</h1>
 
-<p>alt:V by default does not come with default functions for getting distance.</p>
-<p>Use these functions on server-side or client-side.</p>
+<p>默认情况下，alt:V没有默认的获取距离的函数。</p>
+<p>在服务器端或客户端使用这些函数。</p>
 <pre><code class="lang-js">/**
- * Get all players in a certain range of a position.
+ * 获取特定位置范围内的所有玩家。
  * @param  {} pos
  * @param  {} range
  * @param  {} dimension=0
@@ -154,7 +154,7 @@ export function getPlayersInRange(pos, range, dimension = 0) {
 }
 
 /**
- * Get the forward vector of a player.
+ * 获取玩家的前方向量。
  * @param  {} rot
  * @returns {{x,y,z}}
  */
@@ -170,8 +170,8 @@ export function getForwardVectorServer(rot) {
 }
 
 /**
- * Get the distance from one vector to another.
- * Does take Z-Axis into consideration.
+ * 求两个向量之间的距离。
+ * 将z轴考虑在内。
  * @param  {} vector1
  * @param  {} vector2
  * @returns {number}
@@ -187,8 +187,8 @@ export function distance(vector1, vector2) {
 }
 
 /**
- * Get the distance from one vector to another.
- * Does not take Z-Axis into consideration.
+ * 求两个向量之间的距离。
+ * 没有考虑z轴。
  * @param  {} vector1
  * @param  {} vector2
  * @returns {{x,y,z}}
@@ -202,7 +202,7 @@ export function distance2d(vector1, vector2) {
 }
 
 /**
- * Check if a position is between two vectors.
+ * 检查某个位置是否位于两个向量之间。
  * @param  {} pos
  * @param  {} vector1
  * @param  {} vector2
@@ -215,7 +215,7 @@ export function isBetween(pos, vector1, vector2) {
 }
 
 /**
- * Get a random position around a position.
+ * 在一个位置周围随机选择一个位置。
  * @param  {} position
  * @param  {} range
  * @returns {{x,y,z}}
@@ -229,7 +229,7 @@ export function randomPositionAround(position, range) {
 }
 
 /**
- * Get the closest vector from a group of vectors.
+ * 从一组向量中找出最近的向量。
  * @param  {alt.Vector3} pos
  * @param  {Array&lt;{x,y,z}&gt; | Array&lt;{pos:alt.Vector3}} arrayOfPositions
  * @returns {Array&lt;any&gt;}
@@ -247,7 +247,7 @@ export function getClosestVectorFromGroup(pos, arrayOfPositions) {
 }
 
 /**
- * Get the closest player to a player.
+ * 获取距离当前玩家最近的一个玩家
  * @param  {} player
  * @returns {Array&lt;alt.Player&gt;}
  */
@@ -256,7 +256,7 @@ export function getClosestPlayer(player) {
 }
 
 /**
- * Get the closest vehicle to a player.
+ * 找到离玩家最近的车辆。
  * @param  {alt.Vector3} player
  * @returns {Array&lt;alt.Vehicle&gt;}
  */
@@ -264,7 +264,7 @@ export function getClosestVehicle(player) {
     return getClosestVectorFromGroup(player.pos, [...alt.Vehicle.all]);
 }
 </code></pre>
-<h2 id="example-usage">Example Usage</h2>
+<h2 id="示例用法">示例用法</h2>
 <pre><code class="lang-js">const dist1 = { x: 5, y: 2, z: 0 };
 const dist2 = { x: 1, y: 1, z: 0 };
 
